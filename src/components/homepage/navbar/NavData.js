@@ -7,18 +7,29 @@ export const navData = [
     videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
     videoDesc:
       "  We ❤️ indies: Save 40% on a bundle of our  motion capture tools",
-   
+
     features: [
       {
-        subTitles:[
-          "Our Vision",
-          "Company Values",
-          "Why Choose 5dVR? ",
-          "Meet the Team",
-          "Client Testimonials",
-        ]
+        subTitles: [
+          { route: "our-vision", subTitle: "Our Vision" },
+          {
+            route: "company-values",
+            subTitle: "Company Values",
+          },
+          {
+            route: "why-choose-5dvr",
+            subTitle: "Why Choose 5dVR? ",
+          },
+          {
+            route: "meet-the-team",
+            subTitle: "Meet the Team",
+          },
+          {
+            route: "client-testimonials",
+            subTitle: "Client Testimonials",
+          },
+        ],
       },
- 
     ],
   },
   {
@@ -29,18 +40,143 @@ export const navData = [
     videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
     videoDesc:
       "  We ❤️ indies: Save 40% on a bundle of our  motion capture tools",
-      features: [
-        {
-          mainTitle: "Virtual Reality ",
-          subTitles:[
-            "Custom VR Experiences",
-            "VR Games",
-            "VR Training Simulations ",
-            "VR Marketing & Promotional Content",
-          ]
-        }
-   
-      ],
+    features: [
+      {
+        mainTitle: "Virtual Reality ",
+        subTitles: [
+          {
+            route: "",
+            subTitle: "Custom VR Experiences",
+          },
+          {
+            route: "",
+            subTitle: "VR Games",
+          },
+          {
+            route: "",
+            subTitle: "VR Training Simulations ",
+          },
+          {
+            route: "",
+            subTitle: "VR Marketing & Promotional Content",
+          },
+        ],
+      },
+      {
+        mainTitle: "Augmented Reality",
+        subTitles: [
+          {
+            route: "",
+            subTitle: "AR Mobile Applications",
+          },
+          {
+            route: "",
+            subTitle: "AR Web Applications",
+          },
+          {
+            route: "",
+            subTitle: "AR Social Media Filters",
+          },
+          {
+            route: "",
+            subTitle: "AR Product Visualization",
+          },
+          {
+            route: "",
+            subTitle: "AR on Stage",
+          },
+        ],
+      },
+      {
+        mainTitle: "Mixed Reality ",
+        subTitles: [
+          {
+            route: "",
+            subTitle: "Custom MR Solutions",
+          },
+          {
+            route: "",
+            subTitle: "MR Training Simulations",
+          },
+          {
+            route: "",
+            subTitle: "MR Interactive Entertainment",
+          },
+        ],
+      },
+      {
+        mainTitle: "360 Photography & Videography ",
+        subTitles: [
+          {
+            route: "",
+            subTitle: "Virtual Tours for Real Estate, Tourism, and Hospitality",
+          },
+        ],
+      },
+      {
+        mainTitle: "3D Modeling & Animation  ",
+        subTitles: [
+          {
+            route: "",
+            subTitle: "High-Quality 3D Models",
+          },
+          {
+            route: "",
+            subTitle: "Character Design and Animation",
+          },
+          {
+            route: "",
+            subTitle: "3D Asset Creation for VR/AR",
+          },
+        ],
+      },
+      {
+        mainTitle: "Interactive Installations ",
+        subTitles: [
+          {
+            route: "",
+            subTitle: "Virtual Mannequin",
+          },
+          {
+            route: "",
+            subTitle: "Anamorphic Screens",
+          },
+          {
+            route: "",
+            subTitle: "Holograms",
+          },
+          {
+            route: "",
+            subTitle: "Kinect Games",
+          },
+        ],
+      },
+      {
+        mainTitle: "Training & Courses ",
+        subTitles: [
+          {
+            route: "",
+            subTitle: "XR Technology Training",
+          },
+          {
+            route: "",
+            subTitle: "Anamorphic Screens",
+          },
+          {
+            route: "",
+            subTitle: "Developer Workshops",
+          },
+          {
+            route: "",
+            subTitle: "Custom XR Training Programs",
+          },
+        ],
+      },
+      {
+        mainTitle: "AI Agents",
+        subTitles: [],
+      },
+    ],
   },
   {
     id: 3,
@@ -50,21 +186,40 @@ export const navData = [
     videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
     videoDesc:
       "  We ❤️ indies: Save 40% on a bundle of our  motion capture tools",
-      features: [
-        {
- 
-          subTitles:[
-            "Education & Training",
-            "Healthcare",
-            "Entertainment",
-            "Cultural Heritage",
-            "Marketing & Retail",
-            "Real Estate",
-            "Events & Exhibitions",
-          ]
-        }
-   
-      ],
+    features: [
+      {
+        subTitles: [
+          {
+            route: "",
+            subTitle: "Education & Training",
+          },
+          {
+            route: "Healthcare",
+            subTitle: "Healthcare",
+          },
+          {
+            route: "",
+            subTitle: "Entertainment",
+          },
+          {
+            route: "",
+            subTitle: "Cultural Heritage",
+          },
+          {
+            route: "",
+            subTitle: "Marketing & Retail",
+          },
+          {
+            route: "",
+            subTitle: "Real Estate",
+          },
+          {
+            route: "",
+            subTitle: "Events & Exhibitions",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 4,
@@ -74,17 +229,24 @@ export const navData = [
     videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
     videoDesc:
       "  We ❤️ indies: Save 40% on a bundle of our  motion capture tools",
-      features: [
-        {
-           subTitles:[
-            "Featured Projects",
-            "Case Studies",
-            "Search by industries and service",
-       
-          ]
-        }
-   
-      ],
+    features: [
+      {
+        subTitles: [
+          {
+            route: "",
+            subTitle: "Featured Projects",
+          },
+          {
+            route: "",
+            subTitle: "Case Studies",
+          },
+          {
+            route: "",
+            subTitle: "Search by industries and service",
+          },
+        ],
+      },
+    ],
   },
   {
     id: 5,
@@ -94,15 +256,23 @@ export const navData = [
     videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
     videoDesc:
       "  We ❤️ indies: Save 40% on a bundle of our  motion capture tools",
-      features: [
-        {
-          subTitles:[
-         "Contact Form",
-         "Office Location" , 
-         "Career Opportunities"
-          ]
-        }
-   
-      ],
+    features: [
+      {
+        subTitles: [
+          {
+            route: "",
+            subTitle: "Contact Form",
+          },
+          {
+            route: "",
+            subTitle: "Office Location",
+          },
+          {
+            route: "",
+            subTitle: "Career Opportunities",
+          },
+        ],
+      },
+    ],
   },
 ];

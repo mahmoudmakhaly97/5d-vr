@@ -1,9 +1,10 @@
-import Banner from "../../components/common/Banner";
+import Banner from "../../../components/common/Banner";
 
-const HomePage = () => {
+const OurVision = () => {
   return (
-    <div>
+    <div className="py-5">
       <Banner
+        className="py-5"
         tabs={[
           {
             tabName: "Capture",
@@ -35,4 +36,4 @@ const HomePage = () => {
     </div>
   );
 };
-export default HomePage;
+export default OurVision;

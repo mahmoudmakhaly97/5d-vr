@@ -1,0 +1,12 @@
+    <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="28"
+              height="22"
+              fill="none"   color="#8c8c8e"
+            >
+              <path
+                fillRule="evenodd"
+                d="M3.365 21.024h4.002v-9.239h2.956l.591-3.732H7.367V5.231c0-1.045 1.001-1.639 1.957-1.639h1.728V.498L7.96.361C5.004.179 3.366 2.5 3.366 5.276v2.776H0v3.732h3.365v9.239z"
+                fill="currentColor"
+              ></path>
+            </svg>
