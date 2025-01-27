@@ -6311,3 +6311,15 @@ body.bg-bright-100 .color-switcher-circle {
 .dropdown-toggle:after {
   display: none;
 }
+/* footer styles  */
+.footer-logo {
+  width: 100px;
+  height: 100px;
+}
+footer input {
+  background-color: transparent;
+  border: 0;
+  border: 1px solid #8e8d90;
+  padding: 0.75rem 1rem;
+  min-height: 3rem;
+}

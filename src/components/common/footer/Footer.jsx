@@ -1,4 +1,5 @@
-import FooterCol from "./FooterCol";
+import youtube from "./../../../assets/images/footer/youtube.jpg";
+import instagram from "./../../../assets/images/footer/instagram.svg";
 import facebook from "../../../assets/images/footer/facebook.svg";
 import twitter from "../../../assets/images/footer/twitter.svg";
 import linkedin from "../../../assets/images/footer/linkedin.svg";
@@ -6,215 +7,461 @@ import tiktok from "../../../assets/images/footer/tiktok.svg";
 import discord from "../../../assets/images/footer/discord.svg";
 import logo from "../../../assets/images/navbar/logo.svg";
 import { ImageMaker } from "../../common";
+import Button from "../Button";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
-  const Links_1 = {
-    title: "Capture tools",
-    subTitle: [
-      "Full Performance Capture",
-      " Smartsuit Pro II",
-      "  Smartgloves",
-      "   Coil Pro",
-      " Face Capture",
-      " Headcam",
-      " Headrig",
-      "Studio Software",
-      "  Rokoko Vision",
-      "    Motion Library",
-      "    Request a Quote",
-      " Book a demo",
-      "   Get in touch",
-    ],
-  };
-  const Links_2 = {
-    title: "Integrations",
-    subTitle: [
-      " Blender",
-      "   Unreal",
-      "   Unity",
-      "   iClone",
-      "   Maya",
-      "   Houdini",
-      " Headrig",
-      "       MotionBuilder",
-    ],
-  };
-  const Links_3 = {
-    title: "Use cases",
-    subTitle: [
-      "  Animation, Film & VFX",
-      "    Game, AR & VR development",
-      "  Academia & Education",
-      "    Customer user stories",
-    ],
-  };
-  const Links_4 = {
-    title: "Learn",
-    subTitle: [
-      "  Events",
-      "Tutorials",
-      "   Free resources",
-      "Reviews",
-      "Artist spotlight",
-      "Insights",
-      "Get sponsored",
-    ],
-  };
-  const Links_5 = {
-    title: "Support",
-    subTitle: [
-      " Rokoko tools video guides",
-      "   Workflow video guides",
-      "Help Center",
-      "  Talk to a Support Engineer",
-      " Request a feature",
-    ],
-  };
-  const Links_6 = {
-    title: "About",
-    subTitle: ["  Careers", "   Our story"],
-  };
-
-  const Links_7 = {
-    title: "Subscribe to our newsletter",
-    subTitle: [
-      <>
-        <a
-          href="#"
-          target="_blank"
-          className="display-flex gap-medium text-decoration-none w-inline-block"
-        >
-          <div className="display-flex direction-vertical w-embed">
-            <ImageMaker src={facebook} />
-          </div>
-          <div className="p small">Facebook</div>
-        </a>
-      </>,
-      <>
-        {" "}
-        <a
-          href="#"
-          target="_blank"
-          className="display-flex gap-medium text-decoration-none w-inline-block"
-        >
-          <div className="display-flex direction-vertical w-embed">
-            <ImageMaker src={twitter} />
-          </div>
-          <div className="p small">Twitter</div>
-        </a>
-      </>,
-      <>
-        {" "}
-        <a
-          href="#"
-          target="_blank"
-          className="display-flex gap-medium text-decoration-none w-inline-block"
-        >
-          <div className="display-flex direction-vertical w-embed">
-            <ImageMaker src={linkedin} />
-          </div>
-          <div className="p small">Linkedin</div>
-        </a>
-      </>,
-      <>
-        {" "}
-        <a
-          href="#"
-          target="_blank"
-          className="display-flex gap-medium text-decoration-none w-inline-block"
-        >
-          <div className="display-flex direction-vertical w-embed">
-            <ImageMaker src={tiktok} />
-          </div>
-          <div className="p small">TikTok</div>
-        </a>
-      </>,
-      <>
-        {" "}
-        <a
-          href="#"
-          target="_blank"
-          className="display-flex gap-medium text-decoration-none w-inline-block"
-        >
-          <div className="display-flex direction-vertical w-embed">
-            <ImageMaker src={discord} />
-          </div>
-          <div className="p small">Discord</div>
-        </a>
-      </>,
-    ],
-  };
-
   return (
-    <footer className="section padding-top padding-huge overflow-hidden bg-dark-900">
-      <div className="container padding-bottom padding-medium font-weight-500">
-        <div className="display-flex direction-vertical gap-huge t_gap-large">
-          <div className="display-flex gap-small t_direction-vertical align-items-center">
-            <div className="width-4-col display-flex align-start">
-              <a
-                href="#"
-                className="logo display-flex align-center gap-x-large padding-0 w-inline-block"
-              >
-                <div className="p Logo color-bright-100 display-flex margin-0 w-embed">
-                  <img className="" src={logo} alt="" />
-                </div>
-              </a>
+    <>
+      <footer className="mt-3 mt-xl-5">
+        <div className="container">
+          <div className="row">
+            <div className="col-xl-4">
+              <ImageMaker
+                src={logo}
+                alt="footer-logo"
+                className="footer-logo mb-3   mb-lg-5 d-block"
+              />
+              <h6 className="mb-3">Subscribe to our newsletter</h6>
+              <div className="d-flex gap-2 align-items-center mb-3 mb-lg-4">
+                <input
+                  type="text"
+                  placeholder="Your email"
+                  className="  rounded-pill"
+                />
+                <Button className="bg-white text-dark">
+                  <i className="fa-solid fa-arrow-right"></i>
+                </Button>
+              </div>
+              <Link to="" className="mb-3 d-block">
+                <ImageMaker src={youtube} alt="Youtube" />
+              </Link>
+              <ul>
+                <li className="mb-3">
+                  <Link
+                    to=""
+                    className="d-flex align-items-center gap-4 text-decoration-none"
+                  >
+                    <ImageMaker src={instagram} alt="instagram" />
+                    <span>Instagram</span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link
+                    to=""
+                    className="d-flex align-items-center gap-4 text-decoration-none"
+                  >
+                    <ImageMaker src={facebook} alt="facebook" />
+                    <span>facebook</span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link
+                    to=""
+                    className="d-flex align-items-center gap-4 text-decoration-none"
+                  >
+                    <ImageMaker src={twitter} alt="twitter" />
+                    <span>twitter</span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link
+                    to=""
+                    className="d-flex align-items-center gap-4 text-decoration-none"
+                  >
+                    <ImageMaker src={linkedin} alt="linkedin" />
+                    <span>linkedin</span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link
+                    to=""
+                    className="d-flex align-items-center gap-4 text-decoration-none"
+                  >
+                    <ImageMaker src={tiktok} alt="tiktok" />
+                    <span>tiktok</span>
+                  </Link>
+                </li>
+                <li className="mb-3">
+                  <Link
+                    to=""
+                    className="d-flex align-items-center gap-4 text-decoration-none"
+                  >
+                    <ImageMaker src={discord} alt="discord" />
+                    <span>discord</span>
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div className="width-6-col">
-              <p className="color-bright-100 t_margin-bottom">
-                Turn motion into magic.
-              </p>
-            </div>
-            <div className="width-2-col">DROPDOWN</div>
-          </div>
-          <div className="display-flex gap-small t_direction-vertical t_gap-xx-large">
-            <div className="width-8-col">
-              <div className="display-flex gap-small t_direction-vertical t_gap-0">
-                <div className="width-2-col-in-8-col">
-                  <FooterCol links={Links_1} />
+            <div className="col-xl-4">
+              <h6 className="my-3 my-xl-5">Turn motion into magic.</h6>
+              <div className="pb-0 pb-xl-4"></div>
+              <div className="row">
+                <div className="col">
+                  <ul>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        <h6> Capture tools</h6>
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Full Performance
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Smartsuit Pro II{" "}
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Smartgloves
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Coil Pro{" "}
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Face Capture
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Headcam{" "}
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Headrig
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Studio Software
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Rokoko Vision
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Motion Library
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Request a Quote
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Book a demo
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Get in touch
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
-                <div className="width-2-col-in-8-col">
-                  <FooterCol links={Links_2} />
-                </div>
-                <div className="width-2-col-in-8-col">
-                  <div className="display-flex direction-vertical gap-medium t_gap-0">
-                    <FooterCol links={Links_3} />
-
-                    <div className="t_border-bottom border-color-grey-500">
-                      <FooterCol links={Links_4} />
-                    </div>
-                  </div>
-                </div>
-                <div className="width-2-col-in-8-col">
-                  <div className="display-flex direction-vertical gap-medium t_gap-0">
-                    <FooterCol links={Links_5} />
-                    <FooterCol links={Links_6} />
-                  </div>
+                <div className="col">
+                  <ul>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        <h6> Integrations </h6>
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        Blender
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        Unreal
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        Unity
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        iClone
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        Cinema 4D
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        Maya
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        Houdini
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        MotionBuilder
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        Cartoon Animation
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        See all integrations
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div className="width-4-col order-first t_order-last">
-              <FooterCol links={Links_7} />
+            <div className="col-xl-4">
+              <h6 className="my-4 my-xl-5"></h6>
+              <div className="pb-0 pb-xl-4"></div>
+              <div className="row">
+                <div className="col">
+                  <ul className="mb-3 mb-lg-5">
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        <h6> Use cases</h6>
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Animation, Film & VFX
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Game, AR & VR
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Academia & Education
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Customer user stories
+                      </Link>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        <h6> Learn </h6>
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Events
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Tutorials
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Free resources
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Reviews
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Artist spotlight
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Insights
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Get sponsored
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col">
+                  <ul className="mb-5">
+                    <li className="mb-3 mb-lg-3">
+                      <Link to="" className="text-decoration-none">
+                        <h6> Support </h6>
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Rokoko tools video guides
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Rokoko tools video guides
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Help Center
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Talk to a Support Engineer
+                      </Link>
+                    </li>
+                  </ul>
+                  <ul>
+                    <li className="mb-3">
+                      <Link to="" className="text-decoration-none">
+                        <h6> About </h6>
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Events
+                      </Link>
+                    </li>
+                    <li className="mb-3">
+                      <Link
+                        to=""
+                        className="text-decoration-none font-weight-500"
+                      >
+                        Careers
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="display-flex align-center gap-medium m_direction-vertical m_align-start m_gap-x-small">
-            <div className="p small font-weight-500">© Rokoko</div>
-            <a
-              href="#"
-              className="p small font-weight-500 text-decoration-none"
-            >
-              Terms of use
-            </a>
-            <a
-              href="#"
-              className="p small font-weight-500 text-decoration-none"
-            >
-              Privacy policy
-            </a>
-          </div>
+        </div>
+      </footer>
+      <div className="copyright py-4">
+        <div className="container d-flex align-items-center gap-4">
+          <Link to="" className="text-decoration-none  font-weight-500">
+            @5dvr
+          </Link>
+          <Link to="" className="text-decoration-none  font-weight-500">
+            Terms of use
+          </Link>
+          <Link to="" className="text-decoration-none  font-weight-500">
+            Privacy policy
+          </Link>
         </div>
       </div>
-      <div></div>
-    </footer>
+    </>
   );
 };
 export default Footer;
