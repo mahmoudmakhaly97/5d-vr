@@ -7,8 +7,8 @@ import {
   OurVision,
   WhyChoose5dVr,
 } from "./pages";
-import Navbar from "./components/homepage/navbar/Navbar";
-import Footer from "./components/homepage/footer/Footer";
+import {Navbar} from "./components";
+import { Footer } from "./components";
 
 const App = () => {
   return (

@@ -5,10 +5,12 @@ const Navbar = () => {
   return (
     <nav className="navigation-bar  pointer-events-auto">
       <div className="container wide d-flex justify-content-between align-items-center">
-        <Link to="/">
+      <Link to="/">
           <NavLogo />
         </Link>
-        <NavLinks />
+        <NavLinks />  
+
+    
       </div>
     </nav>
   );

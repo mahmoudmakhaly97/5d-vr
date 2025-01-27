@@ -1,12 +1,19 @@
 import user from "../../../assets/images/navbar/user-icon.svg";
-import Button from "./Button";
+import Button from "../Button";
 import { navData } from "./NavData";
 import NavItem from "./NavItem";
+import Offcanvas from "./Offcanvas";
 
 const NavLinks = () => {
   return (
     <div className="sizing-grow display-flex align-center justify-space-between t_direction-reverse t_justify-start">
-      <div className="nav-burger bg-switch-on">
+      <div
+        className="nav-burger bg-switch-on"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+      >
         <div
           id="nav-burger-line-1"
           className="nav-burger-line bg-bright-100 bg-switch-on"
@@ -16,6 +23,10 @@ const NavLinks = () => {
           className="nav-burger-line bg-bright-100 bg-switch-on"
         ></div>
       </div>
+      {/* ................. */}
+      <Offcanvas />
+      {/* .................. */}
+
       <div className="nav-menu bg-switch-on t_visibility-hidden">
         <ul
           role="list"

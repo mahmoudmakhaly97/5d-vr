@@ -4,7 +4,7 @@ import twitter from "../../../assets/images/footer/twitter.svg";
 import linkedin from "../../../assets/images/footer/linkedin.svg";
 import tiktok from "../../../assets/images/footer/tiktok.svg";
 import discord from "../../../assets/images/footer/discord.svg";
-import logo from "../../../assets/images/navbar/logo.png";
+import logo from "../../../assets/images/navbar/logo.svg";
 import { ImageMaker } from "../../common";
 const Footer = () => {
   const Links_1 = {
