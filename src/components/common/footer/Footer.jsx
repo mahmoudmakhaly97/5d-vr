@@ -272,7 +272,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="col-xl-4">
-              <h6 className="my-4 my-xl-5"></h6>
+              <h6 className="my-4 my-xl-5">Turn motion into magic.</h6>
               <div className="pb-0 pb-xl-4"></div>
               <div className="row">
                 <div className="col">

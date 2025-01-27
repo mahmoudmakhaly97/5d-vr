@@ -5,7 +5,7 @@ import OffcanvasDropdown from "./OffcanvasDropdown";
 const Offcanvas = () => {
   return (
     <div
-      className="offcanvas offcanvas-start"
+      className="offcanvas offcanvas-top"
       tabIndex="-1"
       id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel"

@@ -6268,6 +6268,7 @@ body.bg-bright-100 .color-switcher-circle {
 .offcanvas {
   z-index: 99999;
   background-color: #000;
+  min-height: 100vh;
 }
 .offcanvas-header img {
   width: 200px;
