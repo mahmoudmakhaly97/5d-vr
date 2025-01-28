@@ -1,38 +1,5 @@
 export const navData = [
   {
-    id: 1,
-    dropdownLink: "About Us",
-    videoPoster:
-      "https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/674485e48f587c8fac8ac2d1_Indie_Navbar_Promo_1212x520-min.avif",
-    videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
-    videoDesc:
-      "  We ❤️ indies: Save 40% on a bundle of our  motion capture tools",
-
-    features: [
-      {
-        subTitles: [
-          { route: "our-vision", subTitle: "Our Vision" },
-          {
-            route: "company-values",
-            subTitle: "Company Values",
-          },
-          {
-            route: "why-choose-5dvr",
-            subTitle: "Why Choose 5dVR? ",
-          },
-          {
-            route: "meet-the-team",
-            subTitle: "Meet the Team",
-          },
-          {
-            route: "client-testimonials",
-            subTitle: "Client Testimonials",
-          },
-        ],
-      },
-    ],
-  },
-  {
     id: 2,
     dropdownLink: "Services",
     videoPoster:
@@ -175,9 +142,11 @@ export const navData = [
       {
         mainTitle: "AI Agents",
         subTitles: [],
+        quote: "‘Stepping into the next dimension’ ",
       },
     ],
   },
+
   {
     id: 3,
     dropdownLink: "Sectors & Industries",
@@ -218,6 +187,7 @@ export const navData = [
             subTitle: "Events & Exhibitions",
           },
         ],
+        quote: "‘Turning vision into impact, across every domain’",
       },
     ],
   },
@@ -245,9 +215,45 @@ export const navData = [
             subTitle: "Search by industries and service",
           },
         ],
+        quote: "‘Create. Innovate. Immerse.’",
       },
     ],
   },
+  {
+    id: 1,
+    dropdownLink: "About Us",
+    videoPoster:
+      "https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/674485e48f587c8fac8ac2d1_Indie_Navbar_Promo_1212x520-min.avif",
+    videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
+    videoDesc:
+      "  We ❤️ indies: Save 40% on a bundle of our  motion capture tools",
+
+    features: [
+      {
+        subTitles: [
+          { route: "our-vision", subTitle: "Our Vision" },
+          {
+            route: "company-values",
+            subTitle: "Company Values",
+          },
+          {
+            route: "why-choose-5dvr",
+            subTitle: "Why Choose 5dVR? ",
+          },
+          {
+            route: "meet-the-team",
+            subTitle: "Meet the Team",
+          },
+          {
+            route: "client-testimonials",
+            subTitle: "Client Testimonials",
+          },
+        ],
+        quote: "‘Where imagination meets innovation’",
+      },
+    ],
+  },
+
   {
     id: 5,
     dropdownLink: "Contact",

@@ -5,7 +5,7 @@ import { ImageMaker, Video } from "..";
 const NavItem = ({ item }) => {
   return (
     <li className="nav-dropdown-wrap">
-      <a href="#" className="nav-dropdown-link w-inline-block">
+      <a href="#" className="nav-dropdown-link w-inline-block pb-5">
         <p className="me-2">{item.dropdownLink}</p>
         <ImageMaker src={arrowDown} alt="arrow-down" />
       </a>
@@ -38,6 +38,7 @@ const NavItem = ({ item }) => {
                           </Link>
                         </li>
                       ))}
+                      <p>{item?.quote}</p>
                     </div>
                   ))}
                 </ul>

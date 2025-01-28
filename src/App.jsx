@@ -7,13 +7,14 @@ import {
   OurVision,
   WhyChoose5dVr,
 } from "./pages";
-import {Navbar} from "./components";
+import { Navbar } from "./components";
 import { Footer } from "./components";
 
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
+
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="our-vision" element={<OurVision />} />

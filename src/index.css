@@ -6,6 +6,9 @@ html {
 body {
   margin: 0;
 }
+.pointer {
+  cursor: pointer;
+}
 article,
 aside,
 details,
@@ -6260,11 +6263,7 @@ body.bg-bright-100 .color-switcher-circle {
     width: 7rem;
   }
 }
-@media (min-width: 992px) {
-  .nav-dropdown-wrap:hover .nav-dropdown {
-    margin-top: 1rem !important;
-  }
-}
+
 .offcanvas {
   z-index: 99999;
   background-color: #000;
