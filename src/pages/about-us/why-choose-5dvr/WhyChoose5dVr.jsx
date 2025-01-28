@@ -1,5 +1,4 @@
-import Banner from "../../../components/common/Banner";
-
+import { Banner } from "./../../../components";
 const WhyChoose5dVr = () => {
   return (
     <div className="py-5">

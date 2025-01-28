@@ -1,5 +1,5 @@
-import Banner from "../../components/common/Banner";
-
+ 
+import Banner from './../../components/common/banner/Banner';
 const HomePage = () => {
   return (
     <div>

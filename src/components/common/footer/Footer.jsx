@@ -6,8 +6,7 @@ import linkedin from "../../../assets/images/footer/linkedin.svg";
 import tiktok from "../../../assets/images/footer/tiktok.svg";
 import discord from "../../../assets/images/footer/discord.svg";
 import logo from "../../../assets/images/navbar/logo.svg";
-import { ImageMaker } from "../../common";
-import Button from "../Button";
+import { Button, ImageMaker } from "../../common";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
