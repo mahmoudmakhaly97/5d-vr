@@ -13,9 +13,9 @@ const GitInTouchModal = ({ modalShow, setModalShow }) => {
     <ModalMaker
       show={modalShow}
       onHide={() => setModalShow(false)}
-      className="mt-5"
+      className="mt-5 rounded-3"
     >
-      <div className="d-flex justify-content-end p-3">
+      <div className="d-flex justify-content-end p-3 bg-transparent ">
         <Button
           onClick={() => setModalShow(false)}
           className=" bg-transparent border-0 p-0   "

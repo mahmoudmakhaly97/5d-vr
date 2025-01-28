@@ -5,10 +5,10 @@ import arrowDown from "../../../assets/images/navbar/arrow-down.svg";
 const NavItem = ({ item }) => {
   return (
     <li className="nav-dropdown-wrap">
-      <a href="#" className="nav-dropdown-link w-inline-block pb-4">
+      <Link to="" className="nav-dropdown-link w-inline-block pb-4">
         <p className="me-2">{item.dropdownLink}</p>
         <ImageMaker src={arrowDown} alt="arrow-down" />
-      </a>
+      </Link>
 
       <div className="nav-dropdown bg-switch-on visibility-hidden">
         <div className="nav-dropdown-bg bg-switch-on">

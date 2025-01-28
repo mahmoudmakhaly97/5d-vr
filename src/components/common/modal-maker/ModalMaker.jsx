@@ -1,14 +1,15 @@
 import { Modal } from "reactstrap";
 
-const ModalMaker = (props) => {
+const ModalMaker = ({ children, show, onHide, className }) => {
   return (
     <Modal
-      isOpen={props.show} // Use 'isOpen' instead of passing props directly
-      toggle={props.onHide} // Provide the toggle function if applicable
+      isOpen={show}
+      toggle={onHide}
       size="xl"
+      className={className}
       centered
     >
-      {props.children}
+      {children}
     </Modal>
   );
 };

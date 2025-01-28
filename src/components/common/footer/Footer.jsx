@@ -10,7 +10,7 @@ import tiktok from "@images/footer/tiktok.svg";
 import discord from "@images/footer/discord.svg";
 import logo from "@images/navbar/logo.svg";
 import { Col, Container, Input, Row } from "reactstrap";
-
+ 
 const Footer = () => {
   return (
     <>
