@@ -1,4 +1,4 @@
-import { Banner } from "./../../../components";
+import { Banner } from "@components";
 const WhyChoose5dVr = () => {
   return (
     <div className="py-5">

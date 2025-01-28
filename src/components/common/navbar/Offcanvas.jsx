@@ -1,6 +1,6 @@
-import logo from "../../../assets/images/navbar/logo.svg";
 import { navData } from "./NavData";
 import OffcanvasDropdown from "./OffcanvasDropdown";
+import logo from "../../../assets/images/navbar/logo.svg";
 
 const Offcanvas = () => {
   return (

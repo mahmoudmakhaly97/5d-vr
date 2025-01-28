@@ -1,16 +1,14 @@
 import { useState } from "react";
-import user from "../../../assets/images/navbar/user-icon.svg";
+import { Link } from "react-router-dom";
+import { ImageMaker, ModalMaker, Button } from "@components";
 import { navData } from "./NavData";
 import NavItem from "./NavItem";
 import Offcanvas from "./Offcanvas";
+import user from "../../../assets/images/navbar/user-icon.svg";
 import img1 from "../../../assets/images/65c39bb9846cb43884063803_Demo_GIT.webp";
 import img2 from "../../../assets/images/65c39bb8db3d098d17976e96_Sales_GIT.webp";
 import img3 from "../../../assets/images/65c39bb95f039bcad5ec5876_Support_GIT.webp";
 import img4 from "../../../assets/images/633b899b4fb6f953bea69bb7_close-medium.svg";
-import { Link } from "react-router-dom";
-import { Button } from "../button";
-import { ImageMaker } from "../image-maker";
-import { ModalMaker } from "../modal-maker";
 
 const NavLinks = () => {
   const [modalShow, setModalShow] = useState(false);

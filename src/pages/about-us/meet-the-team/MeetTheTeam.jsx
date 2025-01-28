@@ -1,4 +1,5 @@
-import { Banner } from "./../../../components";
+import { Banner } from "@components";
+
 const MeetTheTeam = () => {
   return (
     <div className="py-5">

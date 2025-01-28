@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
+import { ImageMaker, Video } from "@components";
 import arrowDown from "../../../assets/images/navbar/arrow-down.svg";
-import { ImageMaker, Video } from "..";
 
 const NavItem = ({ item }) => {
   return (
