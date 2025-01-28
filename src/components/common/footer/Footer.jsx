@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
+ 
 import { Button, ImageMaker } from "@components";
-import youtube from "./../../../assets/images/footer/youtube.jpg";
-import instagram from "./../../../assets/images/footer/instagram.svg";
-import facebook from "../../../assets/images/footer/facebook.svg";
-import twitter from "../../../assets/images/footer/twitter.svg";
-import linkedin from "../../../assets/images/footer/linkedin.svg";
-import tiktok from "../../../assets/images/footer/tiktok.svg";
-import discord from "../../../assets/images/footer/discord.svg";
-import logo from "../../../assets/images/navbar/logo.svg";
+import youtube from "@images/footer/youtube.jpg";
+import instagram from "@images/footer/instagram.svg";
+import facebook from "@images/footer/facebook.svg";
+import twitter from "@images/footer/twitter.svg";
+import linkedin from "@images/footer/linkedin.svg";
+import tiktok from "@images/footer/tiktok.svg";
+import discord from "@images/footer/discord.svg";
+import logo from "@images/navbar/logo.svg";
 
 const Footer = () => {
   return (
@@ -28,6 +29,7 @@ const Footer = () => {
                   placeholder="Your email"
                   className="  rounded-pill"
                 />
+
                 <Button className="bg-white text-dark">
                   <i className="fa-solid fa-arrow-right"></i>
                 </Button>

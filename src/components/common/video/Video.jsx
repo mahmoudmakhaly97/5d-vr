@@ -1,17 +1,6 @@
 const Video = ({ poster, src, message = "" }) => {
-  const handleCanPlay = () => {
-    console.log("Video can play now");
-  };
-
   return (
-    <video
- 
-      muted
-      autoPlay
-      loop
-      poster={poster}
-      onCanPlay={handleCanPlay}
-    >
+    <video muted autoPlay loop poster={poster}>
       <source src={src} type="video/mp4" />
       {message}
     </video>

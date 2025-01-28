@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
+import { ImageMaker } from "@components";
 import logo from "../../../assets/images/navbar/logo.svg";
 const NavLogo = () => {
   return (
     <Link
       to="/"
-      href="#"
-      className="Logo display-flex align-center margin-right margin-large w-inline-block"
+      className="Logo display-flex align-center"
     >
-      <img src={logo} alt={logo} className=" img-fluid " />
+      <ImageMaker src={logo} alt={logo} />
     </Link>
   );
 };

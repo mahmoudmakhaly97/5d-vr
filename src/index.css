@@ -6266,13 +6266,18 @@ body.bg-bright-100 .color-switcher-circle {
 
 .offcanvas {
   z-index: 99999;
-  background-color: #000;
+  background-color: #000 !important;
   min-height: 100vh;
 }
 .offcanvas-header img {
   width: 200px;
   height: 100px;
   image-rendering: auto;
+}
+@media (max-width: 575px) {
+  .offcanvas-header img {
+  width: 100px;
+  }
 }
 *:focus-visible {
   box-shadow: none !important;
@@ -6316,10 +6321,32 @@ body.bg-bright-100 .color-switcher-circle {
   width: 100px;
   height: 100px;
 }
+
 footer input {
   background-color: transparent;
   border: 0;
   border: 1px solid #8e8d90;
   padding: 0.75rem 1rem;
   min-height: 3rem;
+}
+._btn {
+  border-radius: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+
+  transition: 0.3s all ease;
+  background-color: transparent;
+}
+
+._btn.background {
+  color: #fff;
+  background-color: rgb(209, 20, 82);
+}
+._btn.background:hover {
+  background-color: rgb(209, 20, 82, 0.8);
+}
+._btn.outline {
+  background-color: transparent;
+  border: none;
+  color: #fff;
 }

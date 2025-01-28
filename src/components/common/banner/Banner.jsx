@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Video } from "@components";
-import img2 from "../../../assets/images/63c6b0ad72f4f4b412be97f0_screen-mockup.svg";
+import img2 from "@images/63c6b0ad72f4f4b412be97f0_screen-mockup.svg";
 const Banner = ({ tabs = [], className = "" }) => {
   const [selectedTab, setSelectedTab] = useState(0);
 
