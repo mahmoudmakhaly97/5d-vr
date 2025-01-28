@@ -1,26 +1,25 @@
+import { Offcanvas, OffcanvasHeader, OffcanvasBody } from "reactstrap"; // Import from reactstrap
+import logo from "@images/navbar/logo.svg";
 import { navData } from "./NavData";
 import OffcanvasDropdown from "./OffcanvasDropdown";
-import logo from "../../../assets/images/navbar/logo.svg";
-
-import Offcanvas from "react-bootstrap/Offcanvas";
 
 function OffcanvasMaker({ show, onHide }) {
   return (
     <>
-      <Offcanvas show={show} onHide={onHide}>
-        <Offcanvas.Header>
+      <Offcanvas isOpen={show} toggle={onHide} className="offcanvas-custom">
+        <OffcanvasHeader toggle={onHide}>
           <div className="d-flex justify-content-between w-100 align-items-center">
             <div className="d-flex justify-content-start">
-              <img src={logo} alt={logo} className=" img-fluid " />
+              <img src={logo} alt="Logo" className="img-fluid" />
             </div>
             <i className="fa fa-xmark text-white fa-2x" onClick={onHide}></i>
           </div>
-        </Offcanvas.Header>
-        <Offcanvas.Body className="offcanvas-body d-flex flex-column align-items-center">
+        </OffcanvasHeader>
+        <OffcanvasBody className="offcanvas-body d-flex flex-column align-items-center">
           {navData.map((item) => (
             <OffcanvasDropdown item={item} key={item.id} />
           ))}
-        </Offcanvas.Body>
+        </OffcanvasBody>
       </Offcanvas>
     </>
   );

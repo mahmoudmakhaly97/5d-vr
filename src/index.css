@@ -6276,7 +6276,7 @@ body.bg-bright-100 .color-switcher-circle {
 }
 @media (max-width: 575px) {
   .offcanvas-header img {
-  width: 100px;
+    width: 100px;
   }
 }
 *:focus-visible {
@@ -6322,12 +6322,20 @@ body.bg-bright-100 .color-switcher-circle {
   height: 100px;
 }
 
-footer input {
+footer .form-control {
   background-color: transparent;
   border: 0;
   border: 1px solid #8e8d90;
   padding: 0.75rem 1rem;
   min-height: 3rem;
+  width: 60%;
+}
+footer .form-control:focus {
+  background-color: transparent;
+  border-color: none;
+}
+footer .form-control::placeholder {
+  color: #8e8d90;
 }
 ._btn {
   border-radius: 1.5rem;

@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Col, Row } from "react-bootstrap";
-import { ModalMaker ,  Button , ImageMaker} from "@components";
+import { Button, Col, Row } from "reactstrap";
 
 import img1 from "@images/65c39bb9846cb43884063803_Demo_GIT.webp";
 import img2 from "@images/65c39bb8db3d098d17976e96_Sales_GIT.webp";
 import img3 from "@images/65c39bb95f039bcad5ec5876_Support_GIT.webp";
 import img4 from "@images/633b899b4fb6f953bea69bb7_close-medium.svg";
- const GitInTouchModal = ({ modalShow, setModalShow }) => {
+import ModalMaker from "../modal-maker/ModalMaker";
+import ImageMaker from "./../image-maker/ImageMaker";
+const GitInTouchModal = ({ modalShow, setModalShow }) => {
   return (
     <ModalMaker
       show={modalShow}
@@ -19,7 +20,12 @@ import img4 from "@images/633b899b4fb6f953bea69bb7_close-medium.svg";
           onClick={() => setModalShow(false)}
           className=" bg-transparent border-0 p-0   "
         >
-          <ImageMaker className="pointer" src={img4} alt="close-icon" />
+          <ImageMaker
+            className="pointer"
+            src={img4}
+            alt="close-icon"
+            rest={undefined}
+          />
         </Button>
       </div>
       <div className="  bg-bright-100 p-5 pt-0 ">
