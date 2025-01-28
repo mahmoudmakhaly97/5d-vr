@@ -47,10 +47,7 @@ const NavLinks = () => {
         </ul>
       </div>
       <div className="display-flex align-center">
-        <Button
-          className="outline m_display-none w-button"
-          onClick={() => setModalShow(true)}
-        >
+        <Button className="outline w-button" onClick={() => setModalShow(true)}>
           Get in touch
         </Button>
         <ModalMaker
@@ -61,7 +58,7 @@ const NavLinks = () => {
           <div className="d-flex justify-content-end pt-3">
             <Button
               onClick={() => setModalShow(false)}
-              className=" bg-transparent border-0 p-0"
+              className=" bg-transparent border-0 p-0   "
             >
               <ImageMaker className="pointer" src={img4} alt="close-icon" />
             </Button>
@@ -163,7 +160,7 @@ const NavLinks = () => {
           </div>
         </ModalMaker>
 
-        <Button> Book a demo</Button>
+        <Button className="d-none d-lg-block"> Book a demo</Button>
         <a href="#" className="m_display-none id w-inline-block">
           <div className="p color-bright-100 display-flex w-embed">
             <img src={user} alt="user-icon" />
