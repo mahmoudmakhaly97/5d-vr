@@ -28,11 +28,7 @@ const Banner = ({ tabs = [], className = "" }) => {
                   </div>
                 </div>
               </div>
-              <ImageMaker
-                src={img2}
-                loading="lazy"
-                className="width-full  "
-              />
+              <ImageMaker src={img2} loading="lazy" className="width-full  " />
             </div>
           </div>
         </div>

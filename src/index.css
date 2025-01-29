@@ -6321,7 +6321,9 @@ body.bg-bright-100 .color-switcher-circle {
   width: 100px;
   height: 100px;
 }
-
+footer {
+  background-color: #18181a;
+}
 footer .form-control {
   background-color: transparent;
   border: 0;
@@ -6357,4 +6359,15 @@ footer .form-control::placeholder {
   background-color: transparent;
   border: none;
   color: #fff;
+}
+
+/* home page  */
+.homepage {
+  min-height: 200vh;
+}
+.homepage .shape-container {
+  height: 800px;
+  position: absolute;
+  top: 10%;
+  z-index: -1;
 }
