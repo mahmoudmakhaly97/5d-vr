@@ -42,6 +42,7 @@ import img40 from "../../assets/images/002/002_00054.png";
 import img41 from "../../assets/images/002/002_00055.png";
 import img42 from "../../assets/images/002/002_00056.png";
 import img43 from "../../assets/images/002/002_00057.png";
+import { Container } from "reactstrap";
 
 const images = [
   img1,
@@ -111,8 +112,11 @@ const HomePage = () => {
 
   return (
     <div className="homepage d-flex justify-content-center align-items-center text-white">
-      <div className=" position-fixed shape-container">
+      <div className=" position-fixed shape-container d-none d-lg-block">
         <img src={bgImage} alt="" />
+      </div>
+      <div className="homepage-content">
+        <Container></Container>
       </div>
     </div>
   );

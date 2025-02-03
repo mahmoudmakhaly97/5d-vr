@@ -20,7 +20,7 @@ const NavItem = ({ item }) => {
                     <Video src={item.videoSrc} poster={item.videoPoster} />
                   </div>
                 </div>
-                <h3>{item.videoDesc}</h3>
+                <h6>{item.videoDesc}</h6>
               </div>
               <div className="ms-5 width-6-col d-flex  justify-content-between">
                 <ul role="list" className="nav-dropdown-list">
@@ -38,7 +38,6 @@ const NavItem = ({ item }) => {
                           </Link>
                         </li>
                       ))}
-                      <p>{item?.quote}</p>
                     </div>
                   ))}
                 </ul>

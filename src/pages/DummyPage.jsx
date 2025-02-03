@@ -1,6 +1,6 @@
 import { Banner } from "@components";
 
-const CompanyValues = () => {
+const DummyPage = () => {
   return (
     <div className="py-5">
       <Banner
@@ -41,4 +41,4 @@ const CompanyValues = () => {
     </div>
   );
 };
-export default CompanyValues;
+export default DummyPage;
