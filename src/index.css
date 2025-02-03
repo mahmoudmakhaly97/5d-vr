@@ -6342,6 +6342,9 @@ footer .form-control:focus {
 footer .form-control::placeholder {
   color: #8e8d90;
 }
+.copyright {
+  background-color: #18181a;
+}
 ._btn {
   border-radius: 1.5rem;
   padding: 0.75rem 1.5rem;
