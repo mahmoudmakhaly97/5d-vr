@@ -7,19 +7,19 @@ import { ImageMaker } from "@components/common";
 const featuresData = [
   {
     icon: icon1,
-    text: "30-day trial with refund guarantee",
+    text: "Innovation at the Core",
   },
   {
     icon: icon2,
-    text: "Worldwide tracked delivery",
+    text: "Client-Centric Solutions ",
   },
   {
     icon: icon3,
-    text: "Pay in 12 payments (USA)",
+    text: "Creativity Unleashed Excellence and Quality",
   },
   {
     icon: icon4,
-    text: "Dedicated support team",
+    text: "Collaboration and Partnership",
   },
 ];
 const Features = () => {

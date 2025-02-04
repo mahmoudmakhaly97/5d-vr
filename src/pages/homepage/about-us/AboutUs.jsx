@@ -6,22 +6,22 @@ const AboutUs = () => {
     <Container className="  bg_section about-us  ">
       <Row>
         <Col xl={8}>
-          <h1>Capture your body’s motion in real-time with Smartsuit Pro II</h1>
+          <h1>
+            Transforming Ideas into Immersive Experiences That Shape the Future.
+          </h1>
         </Col>
         <Col xl={4} className="d-flex flex-column gap-3 align-items-start">
           <p className="text-gray">
-            Transform your studio, classNameroom or bedroom into a stage and
-            breathe life into your 3D characters with lifelike animations, for
-            only $2,245
+            Where Technology Meets Imagination to Build the Extraordinary.
           </p>
 
-          <Button variant="secondary "> Buy Smartsuit Pro II</Button>
-
+          <Button variant="secondary ">Know More</Button>
+{/* 
           <Button variant="outline "> Buy Full Performance Capture</Button>
 
           <Button variant="underline " className="text-gray pt-0">
             See if you qualify for indie pricing
-          </Button>
+          </Button> */}
         </Col>
       </Row>
       <div className="py-lg-5 py-3">
