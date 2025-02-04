@@ -2,7 +2,7 @@ import Video from "../../../components/common/video/Video";
 
 const PersonalDemonstration = () => {
   return (
-    <section className="section padding-vertical padding-x-huge bg-bright-100 bg-switch-on t_padding-huge m_padding-xx-large bg_section">
+    <section className="section padding-vertical padding-x-huge  bg-switch-on t_padding-huge m_padding-xx-large bg_section">
       <div className="container">
         <div className="display-flex gap-xx-large t_gap-small m_direction-vertical m_gap-x-large">
           <div className="width-4-col sizing-shrink t_width-5-col">

@@ -124,7 +124,7 @@ const HomePage = () => {
       <div className=" position-fixed shape-container d-none d-lg-block">
         <img src={bgImage} alt="" />
       </div>
-      <div className="homepage-content">
+      <div className="homepage-content  ">
         <Container>
           <AboutUs />
           <Services />
