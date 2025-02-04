@@ -31,7 +31,7 @@ const NavLinks = () => {
         </ul>
       </div>
       <div className="display-flex align-center">
-        <Button onClick={() => setModalShow(true)} variant="background">
+        <Button onClick={() => setModalShow(true)} variant="secondary">
           Get in touch
         </Button>
         <GitInTouchModal modalShow={modalShow} setModalShow={setModalShow} />

@@ -43,7 +43,16 @@ import img41 from "../../assets/images/002/002_00055.png";
 import img42 from "../../assets/images/002/002_00056.png";
 import img43 from "../../assets/images/002/002_00057.png";
 import { Container } from "reactstrap";
-
+import AboutUs from "./about-us/AboutUs";
+import Services from "./services/Services";
+import Features from "./features/Features";
+import Demo from "./demo/Demo";
+import WorkFlow from "./workFlow/WorkFlow";
+import Industry from "./industry/Industry";
+import Experts from "./experts/Experts";
+import MocapSuits from "./mocap-suits/MocapSuits";
+import PersonalDemonstration from "./PersonalDemonstration/PersonalDemonstration";
+import SpeedUp from "./SpeedUp/SpeedUp";
 const images = [
   img1,
   img2,
@@ -116,7 +125,18 @@ const HomePage = () => {
         <img src={bgImage} alt="" />
       </div>
       <div className="homepage-content">
-        <Container></Container>
+        <Container>
+          <AboutUs />
+          <Services />
+          <Features />
+          <Demo />
+          <WorkFlow />
+          <Industry />
+          <Experts />
+          <SpeedUp />
+          <MocapSuits />
+          <PersonalDemonstration />
+        </Container>
       </div>
     </div>
   );

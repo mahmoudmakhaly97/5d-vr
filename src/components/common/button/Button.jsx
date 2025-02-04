@@ -2,7 +2,7 @@ const Button = ({
   children,
   onClick,
   className = "",
-  variant = "background" | "outline",
+  variant = "secondary" | "primary " | "outline" | "underline",
   type = "button",
 }) => {
   return (

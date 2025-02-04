@@ -6239,6 +6239,7 @@ body.bg-bright-100 .color-switcher-circle {
 /* start navbar styles */
 .nav_bar {
   background-color: #18181a;
+  z-index: 999;
 }
 .nav-dropdown-list {
   overflow-y: auto;
@@ -6325,7 +6326,6 @@ body.bg-bright-100 .color-switcher-circle {
   height: 100px;
 }
 footer {
-  background-color: #18181a;
 }
 footer .form-control {
   background-color: transparent;
@@ -6354,33 +6354,106 @@ footer .form-control::placeholder {
   background-color: transparent;
 }
 
-._btn.background {
+._btn.secondary {
   color: #fff;
   background-color: rgb(209, 20, 82);
 }
-._btn.background:hover {
-  background-color: rgb(209, 20, 82, 0.8);
+._btn.secondary:hover {
+  background-color: rgba(209, 20, 82, 0.8);
 }
+._btn.primary {
+  color: #fff;
+  background-color: rgb(47, 131, 240);
+}
+._btn.primary:hover {
+  color: #fff;
+  background-color: rgba(47, 131, 240, 0.8);
+}
+
 ._btn.outline {
   background-color: transparent;
-  border: none;
+  border: 1px solid #fff;
   color: #fff;
 }
 
-/* home page  */
-.homepage {
-  min-height: 200vh;
+._btn.underline {
+  background-color: transparent;
+  text-decoration: underline;
+  padding-left: 5px;
+  padding-right: 5px;
 }
+
+/* home page  */
+
 .homepage .shape-container {
   position: absolute;
   top: 10%;
   z-index: -1;
 }
 .homepage .homepage-content {
-  position: absolute;
-  top: 15%;
-  background-color: rgb(209, 20, 82, 0.8);
+  /* position: absolute;
+  top: 15%; */
 }
 .homepage .homepage-content .container {
   width: 95%;
+}
+.bg_section {
+  background-color: rgb(24, 24, 26, 0.8) !important;
+}
+.bg_section.about-us {
+  padding-top: 150px;
+}
+.bg_section.about-us h1 {
+  width: 80%;
+}
+.text-gray {
+  color: #8e8d90;
+}
+@media (max-width: 991px) {
+  .bg_section.services .media-wrap {
+    height: 100% !important;
+  }
+  .bg_section.services .m_327x425 {
+    padding-top: 176%;
+  }
+}
+.demo.bg_section .title {
+  width: 80%;
+}
+.bg_section.industry .content {
+  width: 80%;
+}
+.bg_section.industry .img-container {
+  width: 80px;
+  height: 50px;
+}
+
+@media (max-width: 991px) {
+  .bg_section.industry .content {
+    width: 100%;
+  }
+}
+.bg_section.experts .border-container {
+  height: 1px;
+  width: 50%;
+  background-color: #8e8d90;
+}
+@media (max-width: 575px) {
+  .bg_section.experts .border-container {
+    width: 80%;
+  }
+}
+.bg_section.experts .border-container span {
+  display: block;
+  height: 100%;
+  background-color: #fff;
+}
+.bg_section.experts .border-container span.first {
+  width: 33.333%;
+}
+.bg_section.experts .border-container span.second {
+  width: 66.6666%;
+}
+.bg_section.experts .border-container span.third {
+  width: 100%;
 }
