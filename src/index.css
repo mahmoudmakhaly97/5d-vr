@@ -6457,3 +6457,9 @@ footer .form-control::placeholder {
 .bg_section.experts .border-container span.third {
   width: 100%;
 }
+.bg_section.MocapSuits .row {
+  border-bottom: 1px solid #8e8d90;
+}
+.bg_section.MocapSuits .title{
+  font-size: 1.3rem;
+}
