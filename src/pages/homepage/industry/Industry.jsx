@@ -28,7 +28,7 @@ const images = [
 const Industry = () => {
   return (
     <div className="py-3 py-lg-5 bg_section  industry">
-      <Container>
+      <Container className="py-5">
         <Row className="g-4">
           <Col lg={6}>
             <div className="d-flex flex-column gap-4 content">

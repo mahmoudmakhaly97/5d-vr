@@ -3,7 +3,7 @@ import { Button, Video } from "@components/common";
 const Demo = () => {
   return (
     <section className=" py-3 py-lg-5 demo  bg_section px-0">
-      <Container>
+      <Container className="py-5">
         <Row className="mb-3 mb-lg-5">
           <Col xl={8}>
             <h2 className="title">

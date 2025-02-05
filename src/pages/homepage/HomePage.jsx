@@ -53,6 +53,10 @@ import Experts from "./experts/Experts";
 import MocapSuits from "./mocap-suits/MocapSuits";
 import PersonalDemonstration from "./PersonalDemonstration/PersonalDemonstration";
 import SpeedUp from "./SpeedUp/SpeedUp";
+import Media from "./media/Media";
+import RicherAnimation from "./richer-animation/RicherAnimation";
+import FullPerformance from "./features/FullPerformance";
+import CoilPro from "./coil-pro/CoilPro";
 const images = [
   img1,
   img2,
@@ -126,7 +130,14 @@ const HomePage = () => {
       </div> */}
       <div className="homepage-content  ">
         <Container>
-          <AboutUs />
+          <RicherAnimation />
+          <FullPerformance />
+          <Features />
+          <Demo />
+          <CoilPro />
+          <Industry />
+          <Media />
+          {/* <AboutUs />
           <Services />
           <Features />
           <Demo />
@@ -135,7 +146,7 @@ const HomePage = () => {
           <Experts />
           <SpeedUp />
           <MocapSuits />
-          <PersonalDemonstration />
+          <PersonalDemonstration /> */}
         </Container>
       </div>
     </div>

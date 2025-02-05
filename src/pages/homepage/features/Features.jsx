@@ -24,7 +24,7 @@ const featuresData = [
 ];
 const Features = () => {
   return (
-    <div className="section padding-x-huge t_padding-huge m_padding-x-large bg_section px-0">
+    <div className="section   t_padding-huge  bg_section px-0">
       <Container>
         <Row className="g-3 text-center">
           {featuresData.map((item, index) => (
