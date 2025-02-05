@@ -20,11 +20,7 @@ const AboutUs = () => {
                 <p className="text-gray">
                   Where Technology Meets Imagination to Build the Extraordinary.
                 </p>
-                <Button variant="secondary">Lorem Ipsum</Button>
-                <p className="caption">
-                  Or <a href="/request-quote">request a quote</a> for a custom
-                  mocap bundle
-                </p>
+                <Button variant="secondary"> Know More</Button>
               </div>
             </div>
           </div>
