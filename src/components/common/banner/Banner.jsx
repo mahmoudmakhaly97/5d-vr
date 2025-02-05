@@ -18,7 +18,7 @@ const Banner = ({ tabs = [], className = "" }) => {
             <div className="position-relative">
               <div className="macbook-screen">
                 <div className="media-wrap _16x9 border-radius-0">
-                  <div className="media-asset ">
+                  <div className="media-asset d-flex">
                     <Video
                       poster="https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/646cd59500edc1681aba933c_capture-studio-thumbnail-min.webp"
                       src="https://media.rokoko.com/Capture-Studio.mp4"

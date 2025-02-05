@@ -1,16 +1,16 @@
-/* eslint-disable no-undef */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const OffcanvasDropdown = ({ item }) => {
   const [toggle, setToggle] = useState(false);
 
-  // Function to close offcanvas
+  // Function to close the offcanvas without reloading the page
   const closeOffcanvas = () => {
-    const offcanvasElement = document.querySelector(".offcanvas.show"); // Ensure you target the correct offcanvas
+    const offcanvasElement = document.querySelector(".offcanvas.show");
     if (offcanvasElement) {
-      const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
-      if (offcanvas) offcanvas.hide();
+      offcanvasElement.classList.remove("show");
+      offcanvasElement.style.visibility = "hidden"; // Ensures offcanvas hides properly
+      document.body.classList.remove("offcanvas-backdrop"); // Remove backdrop effect
     }
   };
 
@@ -24,19 +24,19 @@ const OffcanvasDropdown = ({ item }) => {
         aria-expanded="false"
         onClick={() => setToggle(!toggle)}
       >
-        <span> {item.dropdownLink}</span>
+        <span>{item.dropdownLink}</span>
         <i
           className={`fa-solid ${toggle ? "fa-chevron-up" : "fa-chevron-down"}`}
-        ></i>{" "}
+        ></i>
       </button>
       <ul
         className="dropdown-menu position-relative"
         aria-labelledby="dropdownMenuButton1"
       >
-        {item.features.map((item, index) => (
+        {item.features.map((feature, index) => (
           <React.Fragment key={index}>
-            <h6 className="my-2">{item?.mainTitle}</h6>
-            {item.subTitles.map((subItem, subIndex) => (
+            <h6 className="my-2">{feature?.mainTitle}</h6>
+            {feature.subTitles.map((subItem, subIndex) => (
               <li key={subIndex + 2}>
                 <Link
                   className="dropdown-item"

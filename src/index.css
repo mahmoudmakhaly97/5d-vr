@@ -6279,6 +6279,9 @@ body.bg-bright-100 .color-switcher-circle {
 .offcanvas-title {
   width: 100%;
 }
+.offcanvas-backdrop {
+  background-color: transparent !important; /* Makes the backdrop clear */
+}
 .offcanvas-header img {
   width: 200px;
   height: 100px;
