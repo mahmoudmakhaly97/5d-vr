@@ -24,7 +24,7 @@ const featuresData = [
 ];
 const Features = () => {
   return (
-    <Container className="py-3">
+    <Container className="py-3 pb-lg-5">
       <Row className="g-3 text-center">
         {featuresData.map((item, index) => (
           <Col sm={6} lg={3} key={index}>
