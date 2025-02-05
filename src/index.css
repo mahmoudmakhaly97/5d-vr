@@ -6,6 +6,12 @@ html {
 body {
   margin: 0;
 }
+@media (max-width: 575px) {
+  body,
+  html {
+    overflow-x: hidden !important;
+  }
+}
 .pointer {
   cursor: pointer;
 }
