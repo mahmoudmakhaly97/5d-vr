@@ -34,9 +34,9 @@ const CoilPro = () => {
               <h2>The Coil Pro: Unlock pin-point capture precision</h2>
               <p className="width-5-col-in-6-col">
                 Now you can unlock uninterrupted accuracy for your
-                <a href="/products/smartsuit-pro">Smartsuit Pro II</a> and
-                <a href="/products/smartgloves">Smartgloves</a> without the need
-                for cameras or markers.
+                <a href="#">Smartsuit Pro II</a> and
+                <a href="#">Smartgloves</a> without the need for cameras or
+                markers.
                 <br />
                 <br />
                 The Coil Pro uses the latest innovations in EMF motion capture
@@ -45,27 +45,14 @@ const CoilPro = () => {
                 <br />
                 <br />
                 From props to multi-actor interactions,
-                <a
-                  href="https://www.rokoko.com/insights/five-coil-pro-features-that-will-transform-your-mocap-workflow"
-                  target="_blank"
-                >
-                  read about the key features
-                </a>
+                <a href="#">read about the key features</a>
                 Coil Pro unlocks in your mocap workflow.
               </p>
               <div className="display-flex gap-small children-wrap">
-                <a
-                  href="https://store.rokoko.com/products/coil-pro"
-                  target="_blank"
-                  className="button w-button"
-                >
+                <a href="#" className="button w-button">
                   Buy Coil Pro
                 </a>
-                <a
-                  href="https://calendly.com/product-specialists-rokoko/coil-pro-demo"
-                  target="_blank"
-                  className="button outline w-button"
-                >
+                <a href="#" className="button outline w-button">
                   Book a Coil Pro demo
                 </a>
               </div>

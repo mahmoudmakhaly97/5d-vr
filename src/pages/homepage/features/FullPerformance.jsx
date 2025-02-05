@@ -2,6 +2,7 @@ import img1 from "@images/full1.webp";
 import img2 from "@images/full2.webp";
 import img3 from "@images/full3.webp";
 import img4 from "@images/full4.webp";
+import { Button } from "@components/common";
 const FullPerformance = () => {
   return (
     <section className="section padding-x-huge t_padding-huge m_padding-xx-large">
@@ -10,18 +11,16 @@ const FullPerformance = () => {
           <div className="display-flex justify-space-between gap-small m_direction-vertical">
             <div className="display-flex width-6-col">
               <h2>
-                Full Performance Capture: track body, finger & face motions
+                Transforming Ideas into Immersive Experiences That Shape the
+                Future.
               </h2>
             </div>
             <div className="width-4-col">
               <div className="display-flex direction-vertical gap-small align-start">
-                <p>
-                  Combine the Smartsuit Pro II, Smartgloves & Face Capture for
-                  full body animations
+                <p className="text-gray">
+                  Where Technology Meets Imagination to Build the Extraordinary.
                 </p>
-                <a href="#" className="button w-button">
-                  Learn more
-                </a>
+                <Button variant="secondary">Lorem Ipsum</Button>
                 <p className="caption">
                   Or <a href="/request-quote">request a quote</a> for a custom
                   mocap bundle
@@ -71,7 +70,7 @@ const FullPerformance = () => {
                     href="#"
                     className="display-flex text-decoration-none w-inline-block"
                   >
-                    <h3 className="h _4">Smartsuit Pro II</h3>
+                    <h3 className="h _4">Featured projects</h3>
                   </a>
                   <div className="display-flex children-wrap gap-small">
                     <a href="#" className="button w-button">
@@ -100,7 +99,7 @@ const FullPerformance = () => {
                     href="#"
                     className="display-flex text-decoration-none w-inline-block"
                   >
-                    <h3 className="h _4">Smartgloves</h3>
+                    <h3 className="h _4">Industries We Serve</h3>
                   </a>
                   <div className="display-flex children-wrap gap-small">
                     <a href="#" className="button w-button">
@@ -129,7 +128,7 @@ const FullPerformance = () => {
                     href="#"
                     className="display-flex text-decoration-none w-inline-block"
                   >
-                    <h3 className="h _4">Face Capture</h3>
+                    <h3 className="h _4">Discover AI in XR</h3>
                   </a>
                   <div className="display-flex children-wrap gap-small">
                     <a href="#" className="button w-button">

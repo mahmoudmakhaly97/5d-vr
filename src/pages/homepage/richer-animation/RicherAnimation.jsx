@@ -1,3 +1,4 @@
+import { Button } from "@components/common";
 const RicherAnimation = () => {
   return (
     <header>
@@ -6,21 +7,16 @@ const RicherAnimation = () => {
           <div className="display-flex direction-vertical gap-x-large">
             <div className="display-flex direction-vertical align-center gap-medium t_gap-small">
               <h2 className="h _0">
-                Richer animations start with Rokoko mocap
+                Experience the Future of Immersive Technology with 5dVR
               </h2>
               <div className="width-8-col">
                 <h2 className="h _5 color-grey-500">
-                  Breathe life into your characters with the worlds most
-                  intuitive real-time full body motion capture system
+                  Crafting Immersive Experiences That Inspire, Engage, and
+                  Transform.
                 </h2>
               </div>
               <div className="display-flex align-center justify-center direction-vertical gap-micro">
-                <a href="#" className="button w-button">
-                  Discover Rokoko mocap tools
-                </a>
-                <a href="" className="button small no-outline w-button">
-                  Which mocap system should you buy? Take the test →
-                </a>
+                <Button variant="secondary">Lorem Ipsum</Button>
               </div>
             </div>
             <figure className="display-flex direction-vertical gap-tiny">
@@ -41,10 +37,9 @@ const RicherAnimation = () => {
                   </video>
                 </div>
               </div>
-              <p className="caption">
-                Artwork by Kris Theorin, Fadhlan Irsyad, Jonas Wiede, Kar
-                Ayvazovsky, Niels Ramses Kullack from the animation challenge
-                ‘Alternate Realities’ hosted by Pwnisher
+              <p className="caption text-gray">
+                Transforming Ideas into Immersive Experiences That Shape the
+                Future
               </p>
             </figure>
           </div>

@@ -90,6 +90,9 @@ hr {
   box-sizing: content-box;
   height: 0;
 }
+.font-14{
+  font-size: 13px;
+}
 pre {
   overflow: auto;
 }
@@ -6460,6 +6463,12 @@ footer .form-control::placeholder {
 .bg_section.MocapSuits .row {
   border-bottom: 1px solid #8e8d90;
 }
-.bg_section.MocapSuits .title{
+.bg_section.MocapSuits .title {
   font-size: 1.3rem;
+}
+.slick-slide {
+  padding: 0 10px; /* Adds inner space between slides */
+}
+.slick-list {
+  margin: 0 -10px; /* Prevents layout shift */
 }
