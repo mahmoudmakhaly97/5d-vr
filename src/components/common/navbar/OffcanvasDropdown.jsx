@@ -9,8 +9,9 @@ const OffcanvasDropdown = ({ item }) => {
     const offcanvasElement = document.querySelector(".offcanvas.show");
     if (offcanvasElement) {
       offcanvasElement.classList.remove("show");
-      offcanvasElement.style.visibility = "hidden"; // Ensures offcanvas hides properly
-      document.body.classList.remove("offcanvas-backdrop"); // Remove backdrop effect
+      offcanvasElement.style.visibility = "hidden";
+      document.body.classList.remove("offcanvas-backdrop");
+      document.body.style.overflow = "auto"; // 🔥 Fix: Restore scrolling
     }
   };
 
