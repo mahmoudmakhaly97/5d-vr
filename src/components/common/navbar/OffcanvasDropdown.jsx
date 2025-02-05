@@ -1,8 +1,19 @@
+/* eslint-disable no-undef */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const OffcanvasDropdown = ({ item }) => {
   const [toggle, setToggle] = useState(false);
+
+  // Function to close offcanvas
+  const closeOffcanvas = () => {
+    const offcanvasElement = document.querySelector(".offcanvas.show"); // Ensure you target the correct offcanvas
+    if (offcanvasElement) {
+      const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+      if (offcanvas) offcanvas.hide();
+    }
+  };
+
   return (
     <div className="dropdown" key={item.id}>
       <button
@@ -15,7 +26,7 @@ const OffcanvasDropdown = ({ item }) => {
       >
         <span> {item.dropdownLink}</span>
         <i
-          className={`fa-solid ${toggle ? "fa-chevron-down" : "fa-chevron-up"}`}
+          className={`fa-solid ${toggle ? "fa-chevron-up" : "fa-chevron-down"}`}
         ></i>{" "}
       </button>
       <ul
@@ -25,10 +36,14 @@ const OffcanvasDropdown = ({ item }) => {
         {item.features.map((item, index) => (
           <React.Fragment key={index}>
             <h6 className="my-2">{item?.mainTitle}</h6>
-            {item.subTitles.map((item, index) => (
-              <li key={index + 2}>
-                <Link className="dropdown-item" to={item.route}>
-                  {item.subTitle}
+            {item.subTitles.map((subItem, subIndex) => (
+              <li key={subIndex + 2}>
+                <Link
+                  className="dropdown-item"
+                  to={subItem.route}
+                  onClick={closeOffcanvas}
+                >
+                  {subItem.subTitle}
                 </Link>
               </li>
             ))}
@@ -38,4 +53,5 @@ const OffcanvasDropdown = ({ item }) => {
     </div>
   );
 };
+
 export default OffcanvasDropdown;

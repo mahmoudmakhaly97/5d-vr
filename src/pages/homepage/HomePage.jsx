@@ -1,6 +1,6 @@
 import { Container } from "reactstrap";
 import { Features } from "./features";
-import { Demo } from "./demo";
+// import { Demo } from "./demo";
 import { Industry } from "./industry";
 import { Media } from "./media";
 import { InterestedWithUs } from "./interested-with-us";
