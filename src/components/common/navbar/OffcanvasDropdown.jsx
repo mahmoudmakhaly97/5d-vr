@@ -26,7 +26,7 @@ const OffcanvasDropdown = ({ item }) => {
         aria-expanded="false"
         onClick={() => setToggle(!toggle)}
       >
-        <span>{item.dropdownLink}</span>
+        <span>{item?.dropdownLink}</span>
         <i
           className={`fa-solid ${toggle ? "fa-chevron-up" : "fa-chevron-down"}`}
         ></i>
@@ -38,7 +38,7 @@ const OffcanvasDropdown = ({ item }) => {
         {item.features.map((feature, index) => (
           <React.Fragment key={index}>
             <h6 className="my-2">{feature?.mainTitle}</h6>
-            {feature.subTitles.map((subItem, subIndex) => (
+            {feature?.subTitles?.map((subItem, subIndex) => (
               <li key={subIndex + 2}>
                 <Link
                   className="dropdown-item"
