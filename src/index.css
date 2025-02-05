@@ -3582,6 +3582,9 @@ figcaption {
   align-items: center;
   display: flex;
 }
+.tabs-menu-2 a:hover {
+  color: #8e8d90 !important;
+}
 .tab-link-2 {
   color: var(--var-grey-500);
   white-space: nowrap;
