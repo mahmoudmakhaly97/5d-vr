@@ -24,7 +24,7 @@ const NavItem = ({ item }) => {
               </div>
               <div className="width-1px bg-grey-500 margin-horizontal margin-huge t_display-none"></div>
               <div className="width-6-col d-flex  justify-content-between">
-                <ul role="list" className="nav-dropdown-list">
+                <ul role="list" className="">
                   {item?.features.map((item, index) => (
                     <div key={index}>
                       <li className="nav-dropdown-list-item">
@@ -33,11 +33,6 @@ const NavItem = ({ item }) => {
                             {item.mainTitle}
                           </h4>
                         </Link>
-                        <li className="nav-dropdown-list-item" key={index}>
-                          <Link to={item.route} className="color-bright-100">
-                            <h4 className="font-20"> {item?.subTitle}</h4>
-                          </Link>
-                        </li>
                       </li>
                       {item?.subTitles?.map((item, index) => (
                         <li className="nav-dropdown-list-item" key={index}>

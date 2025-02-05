@@ -6442,12 +6442,22 @@ footer .form-control::placeholder {
 .demo.bg_section .title {
   width: 80%;
 }
+
 .bg_section.industry .content {
   width: 80%;
 }
 .bg_section.industry .img-container {
-  width: 80px;
-  height: 50px;
+  width: 100%;
+  height: auto;
+}
+.industry .slick-slider {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 20px;
+}
+.industry .slick-prev,
+.industry .slick-next {
+  top: 58% !important;
 }
 
 @media (max-width: 991px) {
