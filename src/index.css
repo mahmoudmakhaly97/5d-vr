@@ -99,6 +99,9 @@ hr {
 .font-14 {
   font-size: 14px;
 }
+.font-20 {
+  font-size: 20px;
+}
 pre {
   overflow: auto;
 }
@@ -6496,4 +6499,7 @@ footer .form-control::placeholder {
   .slick-next {
     top: 27% !important;
   }
+}
+.nav-dropdown-wrap .video-desc {
+  font-size: 28.8px;
 }

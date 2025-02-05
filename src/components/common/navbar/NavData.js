@@ -9,134 +9,134 @@ export const navData = [
     features: [
       {
         mainTitle: "Virtual Reality ",
-        subTitles: [
-          {
-            route: "/dummy-page",
-            subTitle: "Custom VR Experiences",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "VR Games",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "VR Training Simulations ",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "VR Marketing & Promotional Content",
-          },
-        ],
+        // subTitles: [
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Custom VR Experiences",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "VR Games",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "VR Training Simulations ",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "VR Marketing & Promotional Content",
+        //   },
+        // ],
       },
       {
         mainTitle: "Augmented Reality",
-        subTitles: [
-          {
-            route: "/dummy-page",
-            subTitle: "AR Mobile Applications",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "AR Web Applications",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "AR Social Media Filters",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "AR Product Visualization",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "AR on Stage",
-          },
-        ],
+        // subTitles: [
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "AR Mobile Applications",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "AR Web Applications",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "AR Social Media Filters",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "AR Product Visualization",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "AR on Stage",
+        //   },
+        // ],
       },
       {
         mainTitle: "Mixed Reality ",
-        subTitles: [
-          {
-            route: "/dummy-page",
-            subTitle: "Custom MR Solutions",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "MR Training Simulations",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "MR Interactive Entertainment",
-          },
-        ],
+        // subTitles: [
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Custom MR Solutions",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "MR Training Simulations",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "MR Interactive Entertainment",
+        //   },
+        // ],
       },
       {
         mainTitle: "360 Photography & Videography ",
-        subTitles: [
-          {
-            route: "/dummy-page",
-            subTitle: "Virtual Tours for Real Estate, Tourism, and Hospitality",
-          },
-        ],
+        // subTitles: [
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Virtual Tours for Real Estate, Tourism, and Hospitality",
+        //   },
+        // ],
       },
       {
         mainTitle: "3D Modeling & Animation  ",
-        subTitles: [
-          {
-            route: "/dummy-page",
-            subTitle: "High-Quality 3D Models",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "Character Design and Animation",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "3D Asset Creation for VR/AR",
-          },
-        ],
+        // subTitles: [
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "High-Quality 3D Models",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Character Design and Animation",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "3D Asset Creation for VR/AR",
+        //   },
+        // ],
       },
       {
         mainTitle: "Interactive Installations ",
-        subTitles: [
-          {
-            route: "/dummy-page",
-            subTitle: "Virtual Mannequin",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "Anamorphic Screens",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "Holograms",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "Kinect Games",
-          },
-        ],
+        // subTitles: [
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Virtual Mannequin",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Anamorphic Screens",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Holograms",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Kinect Games",
+        //   },
+        // ],
       },
       {
         mainTitle: "Training & Courses ",
-        subTitles: [
-          {
-            route: "/dummy-page",
-            subTitle: "XR Technology Training",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "Anamorphic Screens",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "Developer Workshops",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "Custom XR Training Programs",
-          },
-        ],
+        // subTitles: [
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "XR Technology Training",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Anamorphic Screens",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Developer Workshops",
+        //   },
+        //   {
+        //     route: "/dummy-page",
+        //     subTitle: "Custom XR Training Programs",
+        //   },
+        // ],
       },
       {
         mainTitle: "AI Agents",
@@ -272,4 +272,5 @@ export const navData = [
       },
     ],
   },
-];``
+];
+``;

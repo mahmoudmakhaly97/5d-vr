@@ -6,7 +6,7 @@ const NavItem = ({ item }) => {
   return (
     <li className="nav-dropdown-wrap">
       <Link to="" className="nav-dropdown-link w-inline-block pb-4">
-        <p className="me-2">{item.dropdownLink}</p>
+        <p className="me-2">{item?.dropdownLink}</p>
         <ImageMaker src={arrowDown} alt="arrow-down" />
       </Link>
 
@@ -17,21 +17,24 @@ const NavItem = ({ item }) => {
               <div className="width-6-col display-flex direction-vertical t_display-none">
                 <div className="media-wrap _606x260 margin-bottom margin-large w-inline-block">
                   <div className="media-asset display-flex justify-center w-embed">
-                    <Video src={item.videoSrc} poster={item.videoPoster} />
+                    <Video src={item?.videoSrc} poster={item?.videoPoster} />
                   </div>
                 </div>
-                <h6>{item.videoDesc}</h6>
+                <h6 className="video-desc">{item?.videoDesc}</h6>
               </div>
-              <div className="ms-5 width-6-col d-flex  justify-content-between">
+              <div className="width-1px bg-grey-500 margin-horizontal margin-huge t_display-none"></div>
+              <div className="width-6-col d-flex  justify-content-between">
                 <ul role="list" className="nav-dropdown-list">
-                  {item.features.map((item, index) => (
+                  {item?.features.map((item, index) => (
                     <div key={index}>
                       <li className="nav-dropdown-list-item">
                         <Link to={""}>
-                          <h4 className="main-link">{item.mainTitle}</h4>
+                          <h4 className="main-link font-20">
+                            {item.mainTitle}
+                          </h4>
                         </Link>
                       </li>
-                      {item.subTitles.map((item, index) => (
+                      {item?.subTitles?.map((item, index) => (
                         <li className="nav-dropdown-list-item" key={index}>
                           <Link to={item.route} className="color-bright-100">
                             {item?.subTitle}
