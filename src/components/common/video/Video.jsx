@@ -14,6 +14,7 @@ const Video = ({ poster, src, message = "", className, rest, style }) => {
       muted
       autoPlay
       loop
+      playsInline
       poster={poster}
       className={className}
       {...rest}
