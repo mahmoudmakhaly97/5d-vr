@@ -6488,3 +6488,9 @@ footer .form-control::placeholder {
 .slick-next {
   top: 43% !important;
 }
+@media (max-width: 575px) {
+  .slick-prev,
+  .slick-next {
+    top: 27% !important;
+  }
+}
