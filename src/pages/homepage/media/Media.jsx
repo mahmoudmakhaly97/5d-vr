@@ -1,6 +1,6 @@
 import media2 from "@images/media2.webp";
 import media1 from "@images/media1.webp";
-import play from "@images/play.svg";
+ import { Button } from "@components/common";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -28,12 +28,10 @@ const Media = () => {
         <div className="display-flex direction-vertical gap-x-large t_gap-small">
           <div className="display-flex justify-space-between gap-small m_direction-vertical">
             <div className="width-6-col t_width-6-col">
-              <h2>Rokoko mocap is used by thousands of 3D creators</h2>
+              <h2>Stay Connected with 5dVR</h2>
             </div>
             <div>
-              <a href="#" className="button outline w-button">
-                All user stories & reviews
-              </a>
+              <Button variant="outline"> Go to Blog </Button>
             </div>
           </div>
           <div className="display-flex direction-vertical gap-x-large">
@@ -50,27 +48,15 @@ const Media = () => {
                 />
               </a>
               <div className="display-flex m_direction-vertical m_gap-x-small">
-                <div className="width-3-col t_width-4-col">
-                  <a href="#" className="text-decoration-none w-inline-block">
-                    <div className="display-flex align-center gap-x-small">
-                      <img
-                        src={play}
-                        loading="lazy"
-                        alt="open the link"
-                        className="image-play"
-                      />
-                      <p>Watch the story</p>
-                    </div>
-                  </a>
-                </div>
+                <div className="width-3-col t_width-4-col"></div>
                 <div className="width-1-col t_display-none"></div>
                 <a
                   href="#"
                   className="width-6-col t_width-6-col text-decoration-none w-inline-block"
                 >
                   <h3 className="h _4">
-                    A masterclassName in remote collaboration & live holographic
-                    show production with Nicolas Brunet
+                    Follow our journey as we innovate, collaborate, and inspire
+                    across global events and partnerships.
                   </h3>
                 </a>
               </div>

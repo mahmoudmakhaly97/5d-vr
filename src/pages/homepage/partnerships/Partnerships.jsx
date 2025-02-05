@@ -1,4 +1,6 @@
-const CoilPro = () => {
+import { Button } from "@components/common";
+
+const Partnerships = () => {
   return (
     <div className="section   t_padding-huge">
       <div className="container">
@@ -31,35 +33,29 @@ const CoilPro = () => {
           </div>
           <div className="width-6-col t_width-6-col order-first">
             <div className="display-flex direction-vertical gap-small">
-              <h2>The Coil Pro: Unlock pin-point capture precision</h2>
-              <p className="width-5-col-in-6-col">
-                Now you can unlock uninterrupted accuracy for your
-                <a href="#">Smartsuit Pro II</a> and
-                <a href="#">Smartgloves</a> without the need for cameras or
-                markers.
-                <br />
-                <br />
-                The Coil Pro uses the latest innovations in EMF motion capture
-                technology to remove drift and occlusion in real-time providing
-                global positioning for body and fingers.
-                <br />
-                <br />
-                From props to multi-actor interactions,
-                <a href="#">read about the key features</a>
-                Coil Pro unlocks in your mocap workflow.
+              <h2>Our Key Partnerships</h2>
+              <p className="width-5-col-in-6-col text-gray">
+                <strong>TACIES – Oman : </strong>
+                <span>
+                  A collaboration aimed at pushing the boundaries of immersive
+                  education and science, enhancing interactive experiences
+                  across Oman. Together, we are pioneering AR and VR solutions
+                  that inspire curiosity and foster learning.
+                </span>
+              </p>
+              <p className="width-5-col-in-6-col text-gray">
+                <strong>Xceed Immersive – Dubai : </strong>
+                <span>
+                  Partnering to deliver world-class immersive solutions in the
+                  UAE, from corporate training to large-scale entertainment
+                  experiences. Xceed Immersive and 5dVR work hand-in-hand to
+                  redefine possibilities in AR, VR, and MR technologies.
+                </span>
               </p>
               <div className="display-flex gap-small children-wrap">
-                <a href="#" className="button w-button">
-                  Buy Coil Pro
-                </a>
-                <a href="#" className="button outline w-button">
-                  Book a Coil Pro demo
-                </a>
+                <Button variant="secondary">Lorem Ipsum</Button>
+                <Button variant="outline">Lorem Ipsum</Button>
               </div>
-              <p className="caption color-green-500">
-                Refund guarantee: risk-free 30-day trial
-                <br />
-              </p>
             </div>
           </div>
         </div>
@@ -67,4 +63,4 @@ const CoilPro = () => {
     </div>
   );
 };
-export default CoilPro;
+export default Partnerships;

@@ -1,5 +1,5 @@
 import { Button } from "@components/common";
-const RicherAnimation = () => {
+const Experience = () => {
   return (
     <header>
       <div className="section padding-vertical   t_padding-huge pt-5">
@@ -48,4 +48,4 @@ const RicherAnimation = () => {
     </header>
   );
 };
-export default RicherAnimation;
+export default Experience;

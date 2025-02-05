@@ -1,4 +1,4 @@
-const Video = ({ poster, src, message = "", className, rest }) => {
+const Video = ({ poster, src, message = "", className, rest, style }) => {
   const isYoutube = src.includes("youtube.com") || src.includes("youtube.bex");
   return isYoutube ? (
     <iframe
@@ -10,7 +10,15 @@ const Video = ({ poster, src, message = "", className, rest }) => {
       {...rest}
     ></iframe>
   ) : (
-    <video muted autoPlay loop poster={poster} className={className} {...rest}>
+    <video
+      muted
+      autoPlay
+      loop
+      poster={poster}
+      className={className}
+      {...rest}
+      style={style}
+    >
       <source src={src} type="video/mp4" />
       {message}
     </video>
