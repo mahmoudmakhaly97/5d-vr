@@ -37,7 +37,7 @@ const NavItem = ({ item }) => {
                       {item?.subTitles?.map((item, index) => (
                         <li className="nav-dropdown-list-item" key={index}>
                           <Link to={item.route} className="color-bright-100">
-                            {item?.subTitle}
+                            <h4 className="font-20"> {item?.subTitle}</h4>
                           </Link>
                         </li>
                       ))}
