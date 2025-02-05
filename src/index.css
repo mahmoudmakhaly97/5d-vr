@@ -2584,6 +2584,7 @@ figcaption {
   color: #f5f5f5;
   text-decoration: none;
 }
+
 .rows-gap-x-large {
   grid-row-gap: 3rem;
 }
@@ -6256,10 +6257,10 @@ body.bg-bright-100 .color-switcher-circle {
   background-color: #18181a;
   z-index: 999;
 }
-.nav-dropdown-list {
+/* .nav-dropdown-list {
   overflow-y: auto;
   max-height: 500px;
-}
+} */
 
 .nav-dropdown-list::-webkit-scrollbar {
   width: 8px;

@@ -28,11 +28,16 @@ const NavItem = ({ item }) => {
                   {item?.features.map((item, index) => (
                     <div key={index}>
                       <li className="nav-dropdown-list-item">
-                        <Link to={""}>
-                          <h4 className="main-link font-20">
+                        <Link to={""} className="color-bright-100">
+                          <h4 className="color-bright-100 font-20">
                             {item.mainTitle}
                           </h4>
                         </Link>
+                        <li className="nav-dropdown-list-item" key={index}>
+                          <Link to={item.route} className="color-bright-100">
+                            <h4 className="font-20"> {item?.subTitle}</h4>
+                          </Link>
+                        </li>
                       </li>
                       {item?.subTitles?.map((item, index) => (
                         <li className="nav-dropdown-list-item" key={index}>
