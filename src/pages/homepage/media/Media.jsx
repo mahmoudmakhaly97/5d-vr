@@ -91,7 +91,7 @@ const Media = () => {
                   />
                 </a>
                 <div className="display-flex justify-space-between gap-small t_direction-vertical  gap-2 my-3">
-                  <span className="text-gray caption flex-grow-1">
+                  <span className="text-gray  flex-grow-1">
                     5dVR Partners with TACIES for Immersive Science Education in
                     Oman
                   </span>
@@ -116,7 +116,7 @@ const Media = () => {
                   />
                 </a>
                 <div className="display-flex justify-space-between gap-small t_direction-vertical  gap-2 my-3">
-                  <span className="text-gray caption flex-grow-1">
+                  <span className="text-gray  flex-grow-1">
                     Xceed Immersive and 5dVR Team Up for Large-Scale Projects in
                     Dubai
                   </span>
@@ -141,7 +141,7 @@ const Media = () => {
                   />
                 </a>
                 <div className="display-flex justify-space-between gap-small t_direction-vertical  gap-2 my-3">
-                  <span className="text-gray caption flex-grow-1">
+                  <span className="text-gray  flex-grow-1">
                     5dVR at LEAP 2025: Showcasing Immersive Innovation
                   </span>
                   <p className="w-100 font-14">
@@ -166,7 +166,7 @@ const Media = () => {
                   />
                 </a>
                 <div className="display-flex justify-space-between gap-small t_direction-vertical  gap-2 my-3">
-                  <span className="text-gray caption flex-grow-1">
+                  <span className="text-gray  flex-grow-1">
                     Web Summit Qatar: 5dVR Takes Center Stage{" "}
                   </span>
                   <p className="w-100 font-14">
@@ -190,7 +190,7 @@ const Media = () => {
                   />
                 </a>
                 <div className="display-flex justify-space-between gap-small t_direction-vertical  gap-2 my-3">
-                  <span className="text-gray caption flex-grow-1">
+                  <span className="text-gray  flex-grow-1">
                     Technology Partner for RiseUp AI: Shaping the Future{" "}
                   </span>
                   <p className="w-100 font-14">
