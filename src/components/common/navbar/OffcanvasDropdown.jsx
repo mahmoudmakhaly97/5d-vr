@@ -6,6 +6,7 @@ const OffcanvasDropdown = ({ item }) => {
 
   // Function to close the offcanvas without reloading the page
   const closeOffcanvas = () => {
+    window.scroll(0, 0);
     const offcanvasElement = document.querySelector(".offcanvas.show");
     if (offcanvasElement) {
       offcanvasElement.classList.remove("show");

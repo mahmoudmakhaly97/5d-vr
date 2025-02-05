@@ -39,7 +39,7 @@ const Banner = ({ tabs = [], className = "" }) => {
                 <a
                   key={tab.id}
                   className={`tab-link-2 w-inline-block w-tab-link ${
-                    selectedTab == tab.id ? "text-white border-bottom" : ""
+                    selectedTab == tab.id ? "text-white  border-bottom" : ""
                   }`}
                   onClick={() => setSelectedTab(tab.id)}
                 >
