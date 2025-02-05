@@ -90,7 +90,7 @@ hr {
   box-sizing: content-box;
   height: 0;
 }
-.font-14{
+.font-14 {
   font-size: 13px;
 }
 pre {
@@ -6471,4 +6471,8 @@ footer .form-control::placeholder {
 }
 .slick-list {
   margin: 0 -10px; /* Prevents layout shift */
+}
+.slick-prev,
+.slick-next {
+  top: 43% !important;
 }
