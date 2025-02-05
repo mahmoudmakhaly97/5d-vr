@@ -27,7 +27,7 @@ const images = [
 ];
 const Industry = () => {
   return (
-    <div className="py-3 py-lg-5 bg_section  industry">
+    <div className="  py-lg-5 bg_section  industry">
       <Container className="py-5">
         <Row className="g-4">
           <Col lg={6}>

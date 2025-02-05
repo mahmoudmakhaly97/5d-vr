@@ -6276,6 +6276,9 @@ body.bg-bright-100 .color-switcher-circle {
   background-color: #000 !important;
   min-height: 100vh;
 }
+.offcanvas-title {
+  width: 100%;
+}
 .offcanvas-header img {
   width: 200px;
   height: 100px;

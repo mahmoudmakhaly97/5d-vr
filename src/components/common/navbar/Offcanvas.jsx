@@ -6,10 +6,10 @@ import OffcanvasDropdown from "./OffcanvasDropdown";
 function OffcanvasMaker({ show, onHide }) {
   return (
     <>
-      <Offcanvas isOpen={show} toggle={onHide} className="offcanvas-custom">
+      <Offcanvas isOpen={show} toggle={onHide} className="offcanvas-custom ">
         <OffcanvasHeader toggle={onHide}>
-          <div className="d-flex justify-content-between w-100 align-items-center">
-            <div className="d-flex justify-content-start">
+          <div className="d-flex justify-content-between  align-items-center ">
+            <div className="d-flex justify-content-start ">
               <img src={logo} alt="Logo" className="img-fluid" />
             </div>
             <i className="fa fa-xmark text-white fa-2x" onClick={onHide}></i>

@@ -24,20 +24,18 @@ const featuresData = [
 ];
 const Features = () => {
   return (
-    <div className="section   t_padding-huge  bg_section px-0">
-      <Container>
-        <Row className="g-3 text-center">
-          {featuresData.map((item, index) => (
-            <Col md={3} key={index}>
-              <div className="display-flex direction-vertical gap-tiny align-center">
-                <ImageMaker src={item.icon} />
-                <p>{item.text}</p>
-              </div>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </div>
+    <Container className="py-3">
+      <Row className="g-3 text-center">
+        {featuresData.map((item, index) => (
+          <Col sm={6} lg={3} key={index}>
+            <div className="d-flex flex-column gap-3 align-items-start align-items-sm-center">
+              <ImageMaker src={item.icon} />
+              <p>{item.text}</p>
+            </div>
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 };
 export default Features;
