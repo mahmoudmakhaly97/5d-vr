@@ -1,7 +1,6 @@
-import { Col, Container, Row } from "reactstrap";
+import {   Container  } from "reactstrap";
 import { Button, ImageMaker } from "@components/common";
-import img1 from "@images/full1.webp";
-import img2 from "@images/full2.webp";
+ import img2 from "@images/full2.webp";
 import img3 from "@images/full3.webp";
 import img4 from "@images/full4.webp";
 const AboutUs = () => {
@@ -21,30 +20,17 @@ const AboutUs = () => {
   ];
   return (
     <Container className="py-3 py-lg-5">
-      <div className="py-0 py-lg-5">
-        <Row className="pb-3 pb-lg-4">
-          <Col lg={7}>
-            <h2>
-              Transforming Ideas into Immersive Experiences That Shape the
-              Future.
-            </h2>
-          </Col>
-          <Col lg={1}></Col>
-          <Col lg={4}>
-            <div className="d-flex flex-column gap-4 align-items-start  ">
-              <p className="text-gray">
-                Where Technology Meets Imagination to Build the Extraordinary.{" "}
-              </p>
-              <Button variant="secondary"> Know More</Button>
-            </div>
-          </Col>
-        </Row>
+      <div >
+      
         <div>
-          <img src={img1} loading="lazy" className="img-fluid rounded-4" />
-          <div className="py-3 d-flex gap-3 flex-column align-items-start">
+           <div className="py-3 d-flex gap-2 flex-column align-items-start">
             <h3 className="h _4">Full Performance Capture</h3>
-            <Button variant="secondary"> Lorem Ipsum </Button>
-          </div>
+            <h2 className="h _5 color-grey-500">
+            <h2 className="h _5 color-grey-500">
+            Transforming Ideas into Immersive Experiences That Shape the Future.
+
+            </h2>
+            </h2>          </div>
         </div>
         <ul role="list" className="display-flex gap-small carousel">
           {data.map((item, index) => (

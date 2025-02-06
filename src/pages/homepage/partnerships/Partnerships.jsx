@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "reactstrap";
-import { Button, Video } from "@components/common";
+import { Video } from "@components/common";
 const partnershipsData = [
   "Our Key Partnerships",
   {
@@ -24,10 +24,7 @@ const Partnerships = () => {
                 <span>{item.desc}</span>
               </p>
             ))}
-            <div className="display-flex gap-small children-wrap">
-              <Button variant="secondary">Lorem Ipsum</Button>
-              <Button variant="outline">Lorem Ipsum</Button>
-            </div>
+        
           </div>
         </Col>
         <Col lg={6}>

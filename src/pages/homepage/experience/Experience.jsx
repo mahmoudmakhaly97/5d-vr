@@ -22,11 +22,10 @@ const Experience = () => {
 
         <div className="media-wrap _1464x530 t_786x318 m_327x198">
           <div className="media-asset display-flex justify-center w-embed">
-            <Video
-              className="media-asset w-video"
-              poster="https://cdn.prod.website-files.com/6310adc0eca8855210b155c5/6339fbc59841f97babaf81ca_hero.webp"
-              src="https://streamable.com/e/y7d5u9?"
-            />
+          <Video
+  className="media-asset w-video"
+  src="https://www.youtube.com/watch?v=oibDG016-mI" // Normal YouTube link
+/>
           </div>
         </div>
       </Container>
