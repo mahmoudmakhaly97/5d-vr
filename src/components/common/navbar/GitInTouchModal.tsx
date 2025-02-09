@@ -15,7 +15,7 @@ const GitInTouchModal = ({ modalShow, setModalShow }) => {
       onHide={() => setModalShow(false)}
       className="mt-5 rounded-3"
     >
-      <div className="d-flex justify-content-end p-3 bg-transparent ">
+      <div className="d-flex justify-content-end p-3 bg-white rounded-top ">
         <Button
           onClick={() => setModalShow(false)}
           className=" bg-transparent border-0 p-0   "
@@ -28,7 +28,7 @@ const GitInTouchModal = ({ modalShow, setModalShow }) => {
           />
         </Button>
       </div>
-      <div className="  bg-bright-100 p-5 pt-0 ">
+      <div className="  bg-bright-100 p-5 pt-0 rounded-bottom ">
         <div className="display-flex justify-space-between my-4">
           <h2>Connect with us 👋</h2>
         </div>
