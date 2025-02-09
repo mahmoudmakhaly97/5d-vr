@@ -27,7 +27,7 @@ import img21 from "@images/logos/img21.png";
 import img22 from "@images/logos/img22.png";
 import img23 from "@images/logos/img23.png";
 import img24 from "@images/logos/img24.png";
-import img25 from "@images/logos/img25.png";
+import img25 from "@images/logos/img41.png";
 import img26 from "@images/logos/img26.png";
 import img27 from "@images/logos/img27.png";
 import img28 from "@images/logos/img28.png";
@@ -133,86 +133,29 @@ const Industry = () => {
           </Col>
           <Col lg={6}>
             <Slider {...settings}>
-              <div>
-                <Row className="g-3 g-lg-5">
-                  {images[0].map((img, index) => (
-                    <Col className="col-6" sm={4} lg={3} key={index}>
-                      <div className="img-container">
-                        <img
-                          src={img}
-                          loading="lazy"
-                          width="136.5"
-                          className="w-100"
-                        />
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
-              </div>
-              <div>
-                <Row className="g-3 g-lg-5">
-                  {images[1].map((img, index) => (
-                    <Col className="col-6" sm={4} lg={3} key={index}>
-                      <div className="img-container">
-                        <img
-                          src={img}
-                          loading="lazy"
-                          width="136.5"
-                          className="w-100"
-                        />
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
-              </div>
-              <div>
-                <Row className="g-3 g-lg-5">
-                  {images[2].map((img, index) => (
-                    <Col className="col-6" sm={4} lg={3} key={index}>
-                      <div className="img-container">
-                        <img
-                          src={img}
-                          loading="lazy"
-                          width="136.5"
-                          className="w-100"
-                        />
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
-              </div>
-              <div>
-                <Row className="g-3 g-lg-5">
-                  {images[3].map((img, index) => (
-                    <Col className="col-6" sm={4} lg={3} key={index}>
-                      <div className="img-container">
-                        <img
-                          src={img}
-                          loading="lazy"
-                          width="136.5"
-                          className="w-100"
-                        />
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
-              </div>
-              <div>
-                <Row className="g-3 g-lg-5">
-                  {images[4].map((img, index) => (
-                    <Col className="col-6" sm={4} lg={3} key={index}>
-                      <div className="img-container">
-                        <img
-                          src={img}
-                          loading="lazy"
-                          width="136.5"
-                          className="w-100"
-                        />
-                      </div>
-                    </Col>
-                  ))}
-                </Row>
-              </div>
+              {images.map((image, index) => (
+                <div key={index}>
+                  <Row className="g-3 g-lg-5">
+                    {image.map((img, index) => (
+                      <Col className="col-6" sm={4} lg={3} key={index}>
+                        <div className="img-container">
+                          <svg width="80" height="9Creativity Unleashed Excellence and Quality0">
+                            <image
+                              x="0"
+                              y="0"
+                              width="100%"
+                              height="100%"
+                              loading="lazy"
+                              href={img}
+                            />
+                          </svg>
+                        </div>
+                      </Col>
+                    ))}
+                  </Row>
+                </div>
+              ))}
+     
             </Slider>
           </Col>
         </Row>

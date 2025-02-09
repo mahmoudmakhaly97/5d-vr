@@ -6513,4 +6513,5 @@ footer .form-control::placeholder {
 }
 .nav-dropdown-wrap .video-desc {
   font-size: 28.8px;
+  line-height: 1.2;
 }
