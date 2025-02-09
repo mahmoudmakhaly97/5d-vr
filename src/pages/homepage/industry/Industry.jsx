@@ -137,9 +137,9 @@ const Industry = () => {
                 <div key={index}>
                   <Row className="g-3 g-lg-5">
                     {image.map((img, index) => (
-                      <Col className="col-6" sm={4} lg={3} key={index}>
+                      <Col className="col-4 " sm={4} lg={3} key={index}>
                         <div className="img-container">
-                          <svg width="80" height="9Creativity Unleashed Excellence and Quality0">
+                          <svg width="80" height="80">
                             <image
                               x="0"
                               y="0"
@@ -155,7 +155,6 @@ const Industry = () => {
                   </Row>
                 </div>
               ))}
-     
             </Slider>
           </Col>
         </Row>
