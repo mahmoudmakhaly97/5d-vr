@@ -1,35 +1,35 @@
 import {   Container  } from "reactstrap";
  
-import img1 from "@images/full-performance/Discover ai in xr 1.png";
-import img2 from "@images/full-performance/Discover ai in xr 2.png";
-import img3 from "@images/full-performance/Discover ai in xr 3.png";
-import img4 from "@images/full-performance/Discover ai in xr 4.png";
-import img5 from "@images/full-performance/Discover ai in xr 5.png";
-import img6 from "@images/full-performance/Discover ai in xr 6.png";
-import img7 from "@images/full-performance/Discover ai in xr 7.png";
-import img8 from "@images/full-performance/Discover ai in xr 8.png";
-import img9 from "@images/full-performance/Discover ai in xr 9.png";
+import img1 from "../../../assets/images/full-performance/Discover ai in xr 1.png";
+import img2 from "../../../assets/images/full-performance/Discover ai in xr 2.png";
+import img3 from "../../../assets/images/full-performance/Discover ai in xr 3.png";
+import img4 from "../../../assets/images/full-performance/Discover ai in xr 4.png";
+import img5 from "../../../assets/images/full-performance/Discover ai in xr 5.png";
+import img6 from "../../../assets/images/full-performance/Discover ai in xr 6.png";
+import img7 from "../../../assets/images/full-performance/Discover ai in xr 7.png";
+import img8 from "../../../assets/images/full-performance/Discover ai in xr 8.png";
+import img9 from "../../../assets/images/full-performance/Discover ai in xr 9.png";
 
-import img10 from "@images/full-performance/Industries we serve 1.png"
-import img11 from "@images/full-performance/Industries we serve 2.png"
-import img12 from "@images/full-performance/Industries we serve 3.png"
-import img13 from "@images/full-performance/Industries we serve 4.png"
-import img14 from "@images/full-performance/Industries we serve 5.png"
-import img15 from "@images/full-performance/Industries we serve 6.png"
-import img16 from "@images/full-performance/Industries we serve 7.png"
-import img17 from "@images/full-performance/Industries we serve 8.png"
-import img18 from "@images/full-performance/Industries we serve 9.png"
+import img10 from "../../../assets/images/full-performance/Industries we serve 1.png"
+import img11 from "../../../assets/images/full-performance/Industries we serve 2.png"
+import img12 from "../../../assets/images/full-performance/Industries we serve 3.png"
+import img13 from "../../../assets/images/full-performance/Industries we serve 4.png"
+import img14 from "../../../assets/images/full-performance/Industries we serve 5.png"
+import img15 from "../../../assets/images/full-performance/Industries we serve 6.png"
+import img16 from "../../../assets/images/full-performance/Industries we serve 7.png"
+import img17 from "../../../assets/images/full-performance/Industries we serve 8.png"
+import img18 from "../../../assets/images/full-performance/Industries we serve 9.png"
 
 
-import img19 from "@images/full-performance/Featured Projects 1.png"
-import img20 from "@images/full-performance/Featured Projects 2.png"
-import img21 from "@images/full-performance/Featured Projects 3.png"
-import img22 from "@images/full-performance/Featured Projects 4.png"
-import img23 from "@images/full-performance/Featured Projects 5.png"
-import img24 from "@images/full-performance/Featured Projects 6.png"
-import img25 from "@images/full-performance/Featured Projects 7.png"
-import img26 from "@images/full-performance/Featured Projects 8.png"
-import img27 from "@images/full-performance/Featured Projects 9.png"
+import img19 from "../../../assets/images/full-performance/Featured Projects 1.png"
+import img20 from "../../../assets/images/full-performance/Featured Projects 2.png"
+import img21 from "../../../assets/images/full-performance/Featured Projects 3.png"
+import img22 from "../../../assets/images/full-performance/Featured Projects 4.png"
+import img23 from "../../../assets/images/full-performance/Featured Projects 5.png"
+import img24 from "../../../assets/images/full-performance/Featured Projects 6.png"
+import img25 from "../../../assets/images/full-performance/Featured Projects 7.png"
+import img26 from "../../../assets/images/full-performance/Featured Projects 8.png"
+import img27 from "../../../assets/images/full-performance/Featured Projects 9.png"
 
  import HoveredCard from "./HoveredCard";
 const AboutUs = () => {
