@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "reactstrap";
-import { Video } from "@components/common";
+ import { ImageMaker } from "@components/common";
+import img from "@images/key-partnership/img.jpg"
 const partnershipsData = [
   "Our Key Partnerships",
   {
@@ -13,8 +14,8 @@ const partnershipsData = [
 ];
 const Partnerships = () => {
   return (
-    <Container>
-      <Row className="g-3 g-lg-0">
+    <Container className="py-lg-5 py-3">
+      <Row className="g-3 g-lg-5">
         <Col lg={6}>
           <div className="d-flex flex-column gap-4">
             <h2>{partnershipsData[0]}</h2>
@@ -28,18 +29,8 @@ const Partnerships = () => {
           </div>
         </Col>
         <Col lg={6}>
-          <div className="display-flex justify-center">
-            <figure className="width-4-col-in-6-col t_width-full">
-              <div className="media-wrap _472x630">
-                <div className="media-asset d-flex  ">
-                  <Video
-                    poster="https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/64d34a994c0b4c9be2693f52_Coil_Doggo_Thumbnail-min.webp"
-                    src="https://media.rokoko.com/Coil_Doggo_1080x1442.mp4"
-                  />
-                </div>
-              </div>
-            </figure>
-          </div>
+        <ImageMaker src={img} className="rounded-3"   />
+
         </Col>
       </Row>
     </Container>

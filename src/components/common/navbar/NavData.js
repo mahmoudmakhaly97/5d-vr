@@ -108,7 +108,7 @@ export const navData = [
           },
           {
             route: "/dummy-page",
-            subTitle: "Search by industries and service",
+            subTitle: "",
           },
         ],
       },

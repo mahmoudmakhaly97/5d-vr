@@ -1,4 +1,4 @@
-import { Button, Video } from "@components/common";
+import { Video } from "@components/common";
 import { Container } from "reactstrap";
 
 const Experience = () => {
@@ -15,9 +15,7 @@ const Experience = () => {
               Transform.
             </h2>
           </div>
-          <div className="d-flex justify-content-center">
-            <Button variant="secondary">Lorem Ipsum</Button>
-          </div>
+        
         </div>
 
         <div className="media-wrap _1464x530 t_786x318 m_327x198">

@@ -17,7 +17,7 @@ const sections = [
       "Have questions about VR, AR, MR, or immersive technology? Our team of experts is ready to help! Get advice on how our solutions can transform your projects, whether it’s for education, entertainment, or enterprise.",
     details: [
       { label: "Email", value: "info@5d-vr.com" },
-      { label: "Phone", value: "+(202) 25259910 / +(202) 25256793" },
+      { label: "Phone", value: "+201222189681" },
       {
         label: "",
         value: "Let’s talk!",

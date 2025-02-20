@@ -1,46 +1,55 @@
+import { useState, useEffect } from "react";
 import { Row, Col, Container } from "reactstrap";
-import { Button, Video } from "@components/common";
+import ImageMaker from "../../../components/common/image-maker/ImageMaker";
+
+import img1 from "@images/global-presense/Earth0001.png";
+import img2 from "@images/global-presense/Earth0002.png";
+import img3 from "@images/global-presense/Earth0003.png";
+import img4 from "@images/global-presense/Earth0004.png";
+import img5 from "@images/global-presense/Earth0005.png";
+import img6 from "@images/global-presense/Earth0007.png";
+import img7 from "@images/global-presense/Earth0007.png";
+import img8 from "@images/global-presense/Earth0008.png";
+import img9 from "@images/global-presense/Earth0009.png";
+import img10 from "@images/global-presense/Earth0010.png";
+import img11 from "@images/global-presense/Earth0011.png";
+
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9 , img10 , img11];
 
 const GlobalPresence = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 200); // Change image every 2 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
   return (
     <Container className="pt-lg-5 pt-3">
-      <Row className="g-4 g-lg-0 pt-lg-5  pt-3">
+      <Row className="g-4 g-lg-0 pt-lg-5  pt-3 align-item-center">
         <Col lg={6}>
-          <div
-            style={{
-              width: "80%",
-              "@media(max-width:575px": { width: "100%" },
-            }}
-            className="d-flex justify-content-center"
-          >
-            <Video
-              style={{
-                width: "-webkit-fill-available",
-                borderRadius: "20px",
-              }}
-              src={"https://media.rokoko.com/Loacher_944x1260px.mp4"}
-              poster="https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/64ddf03bab742eb1f32517a7_Loacher_944x1260px-thumbnail-min.webp"
-              message=" Your browser does not support the video tag.
-                                        "
-            />
-          </div>
+        <ImageMaker src={images[currentImageIndex]}   />
+
         </Col>
 
         <Col lg={6}>
           <blockquote className="d-flex align-items-center">
-            Our Global Presence : Proudly Collaborating with Clients Around the
-            World
+            Our Global Presence : Proudly Collaborating with Clients Around the World
           </blockquote>
-          <p className="my-4 text-gary ">
-            At 5dVR, we bring immersive technology solutions to clients across
-            the globe. From the Middle East to international markets, our
-            expertise and innovation have made a lasting impact on industries
-            such as education, healthcare, entertainment, real estate, and more.
+          <p className="my-4 text-gary">
+            At 5dVR, we bring immersive technology solutions to clients across the globe.
+            From the Middle East to international markets, our expertise and innovation
+            have made a lasting impact on industries such as education, healthcare,
+            entertainment, real estate, and more.
           </p>
-          <Button variant="secondary"> Lorem Ipsum </Button>
         </Col>
       </Row>
     </Container>
   );
 };
+
 export default GlobalPresence;
+ 
