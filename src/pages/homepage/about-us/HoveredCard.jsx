@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ImageMaker } from "@components/common";
 
 const HoverCard = ({ images }) => {
-  const [currentImage, setCurrentImage] = useState(images[0]);
+  const [currentImage, setCurrentImage] = useState(`${images[0]}?v=${Date.now()}`);
   const intervalRef = useRef(null);
   const [, setTick] = useState(0); // A dummy state to trigger re-renders
 
@@ -14,7 +14,7 @@ const HoverCard = ({ images }) => {
     });
   
     return () => stopSlideshow(); // Cleanup on unmount
-  }, [images]); // Ensure this only runs when images change
+  }, [images]); // Ensure this runs when images change
   const startSlideshow = () => {
     console.log("Hovered!");
     if (images.length < 2) return;
@@ -22,11 +22,12 @@ const HoverCard = ({ images }) => {
     let i = 0;
     intervalRef.current = setInterval(() => {
       console.log("Changing image to:", images[i]);
-      setCurrentImage(() => images[i]); // Ensure functional update
+      setCurrentImage(() => images[i]); // Force functional update
       setTick((t) => t + 1); // Force re-render
       i = (i + 1) % images.length;
     }, 250);
   };
+  
 
   const stopSlideshow = useCallback(() => {
     if (intervalRef.current) {
