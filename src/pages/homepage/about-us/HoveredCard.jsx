@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { ImageMaker } from "@components/common";
 
@@ -11,24 +11,25 @@ const HoverCard = ({ images }) => {
       const img = new Image();
       img.src = url; // Preload images
     });
-  }, [images]);
-
-  const startSlideshow = () => {
-    if (images.length < 2) return; // Prevent unnecessary interval if only one image
+  
+    return () => stopSlideshow(); // Cleanup on unmount
+  }, [images]); // Ensure this only runs when images change
+  const startSlideshow = useCallback(() => {
+    if (images.length < 2) return;
     let i = 0;
     intervalRef.current = setInterval(() => {
       setCurrentImage(images[i]);
       i = (i + 1) % images.length;
     }, 250);
-  };
+  }, [images]);
 
-  const stopSlideshow = () => {
+  const stopSlideshow = useCallback(() => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
-    setCurrentImage(images[0]); 
-  };
+    setCurrentImage(images[0]);
+  }, [images]);
 
   return (
     <li
