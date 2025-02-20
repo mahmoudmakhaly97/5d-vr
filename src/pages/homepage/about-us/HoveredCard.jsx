@@ -6,11 +6,10 @@ const HoverCard = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(images[0]);
   const intervalRef = useRef(null);
 
-  // تحميل الصور مسبقًا لتحسين الأداء مع الصور البعيدة
   useEffect(() => {
     images.forEach((url) => {
       const img = new Image();
-      img.src = `${url}?t=${new Date().getTime()}`; // منع التخزين المؤقت
+      img.src = `${url}?t=${new Date().getTime()}`;
     });
   }, [images]);
 
@@ -19,7 +18,7 @@ const HoverCard = ({ images }) => {
     intervalRef.current = setInterval(() => {
       setCurrentImage(`${images[i]}?t=${new Date().getTime()}`);
       i = (i + 1) % images.length;
-    }, 250); // زيادة مدة العرض لتجنب التقطيع
+    }, 250);
   };
 
   const stopSlideshow = () => {
@@ -27,7 +26,7 @@ const HoverCard = ({ images }) => {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     }
-    setCurrentImage(images[0]); // العودة للصورة الأولى
+    setCurrentImage(images[0]); 
   };
 
   return (
