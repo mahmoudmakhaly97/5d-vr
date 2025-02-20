@@ -10,8 +10,8 @@ const [videoSrc , setVideoSrc] = useState("https://www.youtube.com/watch?v=mfEiI
 const handleTabClick = (tab) => {
   setSelectedTab(tab.id) ; 
  if(tab.id===0){
-  setMainTitle(mainTitle)
-  setVideoSrc(videoSrc)
+  setMainTitle("AI Interact – The Future of Soft Skills Training ")
+  setVideoSrc("https://www.youtube.com/watch?v=mfEiIiixwrk&ab_channel=5dVR")
  }
  else if(tab.id===1){
   setMainTitle("Velux – AR Window Installation Guide  ")
