@@ -1,11 +1,10 @@
 const Video = ({ poster, src, message = "", className, rest, style }) => {
-  const isYoutube = src.includes("youtube.com") || src.includes("youtube.bex");
+  const isYoutube = src.includes("youtube.com") || src.includes("youtube.be");
 
   if (isYoutube) {
-    // Extract video ID from URL
     const url = new URL(src);
-    const videoId = url.searchParams.get("v");
-    const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}`; // Infinite loop
+    const videoId = url.searchParams.get("v") || src.split("/").pop();
+    const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}`;
 
     return (
       <iframe
@@ -15,6 +14,7 @@ const Video = ({ poster, src, message = "", className, rest, style }) => {
         allow="autoplay; encrypted-media; picture-in-picture"
         allowFullScreen
         scrolling="no"
+        style={{ width: "100%", height: "100%", border: "none" }}
         {...rest}
       ></iframe>
     );
@@ -28,12 +28,12 @@ const Video = ({ poster, src, message = "", className, rest, style }) => {
       playsInline
       poster={poster}
       className={className}
+      style={{ width: "100%", height: "100%", ...style }}
       {...rest}
-      style={style}
     >
       <source src={src} type="video/mp4" />
       {message}
     </video>
   );
 };
-export default Video
+export default Video;

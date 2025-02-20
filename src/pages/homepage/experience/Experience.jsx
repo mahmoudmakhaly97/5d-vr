@@ -24,8 +24,9 @@ const Experience = () => {
           <div className="media-asset display-flex justify-center w-embed">
           <Video
   className="media-asset w-video"
-  src="https://www.youtube.com/watch?v=oibDG016-mI" // Normal YouTube link
+  src="https://www.youtube.com/embed/oibDG016-mI"
 />
+
           </div>
         </div>
       </Container>
