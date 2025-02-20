@@ -6447,8 +6447,14 @@ footer .form-control::placeholder {
   width: 80%;
 }
 .bg_section.industry .img-container {
-  width: 100%;
-  height: auto;
+  width: 100pc;
+  height: 100px;
+}
+@media (max-width: 575px) {
+  .bg_section.industry .img-container svg {
+    width: 70px;
+    height: 80px;
+  }
 }
 .industry .slick-slider {
   background-color: #fff;
@@ -6513,6 +6519,7 @@ footer .form-control::placeholder {
 }
 .nav-dropdown-wrap .video-desc {
   font-size: 28.8px;
+  line-height: 1.2;
 }
 
 iframe {

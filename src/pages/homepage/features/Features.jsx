@@ -30,7 +30,7 @@ const Features = () => {
           <Col sm={6} lg={3} key={index}>
             <div className="d-flex flex-column gap-3 align-items-start align-items-sm-center">
               <ImageMaker src={item.icon} />
-              <p>{item.text}</p>
+              <p className="text-left text-lg-center">{item.text}</p>
             </div>
           </Col>
         ))}
