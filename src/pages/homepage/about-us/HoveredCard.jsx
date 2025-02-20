@@ -5,6 +5,7 @@ import { ImageMaker } from "@components/common";
 const HoverCard = ({ images }) => {
   const [currentImage, setCurrentImage] = useState(images[0]);
   const intervalRef = useRef(null);
+  const [, setTick] = useState(0); // A dummy state to trigger re-renders
 
   useEffect(() => {
     images.forEach((url) => {
@@ -21,11 +22,11 @@ const HoverCard = ({ images }) => {
     let i = 0;
     intervalRef.current = setInterval(() => {
       console.log("Changing image to:", images[i]);
-      setCurrentImage(() => images[i]); // Ensure state updates properly
+      setCurrentImage(() => images[i]); // Ensure functional update
+      setTick((t) => t + 1); // Force re-render
       i = (i + 1) % images.length;
-    }, 300);
+    }, 250);
   };
-  
 
   const stopSlideshow = useCallback(() => {
     if (intervalRef.current) {
