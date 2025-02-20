@@ -9,14 +9,15 @@ const HoverCard = ({ images }) => {
   useEffect(() => {
     images.forEach((url) => {
       const img = new Image();
-      img.src = `${url}?t=${new Date().getTime()}`;
+      img.src = url; // Preload images
     });
   }, [images]);
 
   const startSlideshow = () => {
+    if (images.length < 2) return; // Prevent unnecessary interval if only one image
     let i = 0;
     intervalRef.current = setInterval(() => {
-      setCurrentImage(`${images[i]}?t=${new Date().getTime()}`);
+      setCurrentImage(images[i]);
       i = (i + 1) % images.length;
     }, 250);
   };
