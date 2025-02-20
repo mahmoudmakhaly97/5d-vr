@@ -16,8 +16,7 @@ const HoverCard = ({ images }) => {
     return () => stopSlideshow(); // Cleanup on unmount
   }, [images]); // Ensure this runs when images change
   const startSlideshow = () => {
-    console.log("Hovered!");
-    if (images.length < 2) return;
+     if (images.length < 2) return;
   
     let i = 0;
     intervalRef.current = setInterval(() => {
