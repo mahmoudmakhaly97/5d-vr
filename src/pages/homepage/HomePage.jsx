@@ -3,7 +3,6 @@ import { Features } from "./features";
 // import { Demo } from "./demo";
 import { Industry } from "./industry";
 import { Media } from "./media";
-import { InterestedWithUs } from "./interested-with-us";
 import { GlobalPresence } from "./global-presense";
 import { Experience } from "./experience";
 import { Partnerships } from "./partnerships";
@@ -18,7 +17,7 @@ const HomePage = () => {
         <Features />
         {/* <Demo /> */}
         <Partnerships />
-        <InterestedWithUs />
+        {/* <InterestedWithUs /> */}
         <GlobalPresence />
         <Industry />
         <Media />

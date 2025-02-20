@@ -1,8 +1,9 @@
 import { Col, Container, Row } from "reactstrap";
+import { Button, Video } from "@components/common";
+
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Button } from "@components/common";
 import media2 from "@images/media2.webp";
 import media1 from "@images/media1.webp";
 const mediaData = [
@@ -10,6 +11,7 @@ const mediaData = [
     imgUrl: media1,
     title: "5dVR Partners with TACIES for Immersive Science Education in Oman",
     text: "  We’re thrilled to collaborate with TACIES to bring cutting-edge AR  and VR experiences across Oman, enhancing how science is taught and experienced.",
+    videoUrl:"https://www.youtube.com/embed/oibDG016-mI"
   },
   {
     imgUrl: media2,
@@ -52,7 +54,7 @@ const Media = () => {
   };
   return (
     <Container>
-      <Row className="align-items-lg-center g-3  ">
+      <Row className="align-items-lg-center g-3 mb-3 mb-lg-5  ">
         <Col lg={6}>
           <h2>Stay Connected with 5dVR</h2>
         </Col>
@@ -60,11 +62,11 @@ const Media = () => {
           <Button variant="outline"> Go to Blog </Button>
         </Col>
       </Row>
-      <Row className="py-3">
+      {/* <Row className="py-3">
         <div className="media-wrap _1464x530 t_786x318 m_327x198 w-inline-block ">
           <img src={media1} loading="lazy" alt="" className="media-asset " />
         </div>
-      </Row>
+      </Row> */}
       <Row>
         <Col lg={3}></Col>
 
@@ -86,7 +88,14 @@ const Media = () => {
               href="#"
               className="media-wrap _720x370 t_381x231 w-inline-block"
             >
-              <img src={item.imgUrl} className="media-asset" />
+              {
+                item.videoUrl?          <Video
+                className="media-asset w-video"
+                src={item.videoUrl}
+              />: <img src={item.imgUrl} className="media-asset" /> 
+              }
+              {/* <img src={item.imgUrl} className="media-asset" /> */}
+              
             </a>
             <div className="display-flex justify-space-between gap-small t_direction-vertical  gap-2 my-3">
               <span className="text-gray  flex-grow-1">{item.title}</span>

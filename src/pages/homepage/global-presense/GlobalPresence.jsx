@@ -3,8 +3,8 @@ import { Button, Video } from "@components/common";
 
 const GlobalPresence = () => {
   return (
-    <Container>
-      <Row className="g-4 gl-lg-0">
+    <Container className="pt-lg-5 pt-3">
+      <Row className="g-4 g-lg-0 pt-lg-5  pt-3">
         <Col lg={6}>
           <div
             style={{

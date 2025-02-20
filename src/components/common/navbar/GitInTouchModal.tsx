@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import { Button, Col, Row } from "reactstrap";
 
 import img1 from "@images/homepagemodal/img1.webp";
-import img2 from "@images/homepagemodal/img1.webp";
-import img3 from "@images/homepagemodal/img1.webp";
+import img2 from "@images/homepagemodal/img2.webp";
+import img3 from "@images/homepagemodal/img3.webp";
 import img4 from "@images/homepagemodal/close.svg";
 import ModalMaker from "../modal-maker/ModalMaker";
 import ImageMaker from "../image-maker/ImageMaker";
 
 const sections = [
   {
-    img: img2,
+    img: img3,
     title: "Talk to an Expert",
     description:
       "Have questions about VR, AR, MR, or immersive technology? Our team of experts is ready to help! Get advice on how our solutions can transform your projects, whether it’s for education, entertainment, or enterprise.",
@@ -28,7 +28,7 @@ const sections = [
   },
 
   {
-    img: img3,
+    img: img2,
     title: "Our Office Location",
     description:
       "We love collaborating with visionaries from all around the world! Visit us at our headquarters in Cairo, Egypt, to explore the world of immersive experiences.",
@@ -99,20 +99,21 @@ const GitInTouchModal = ({ modalShow, setModalShow }) => {
         </Button>
       </div>
       <div className="bg-bright-100 p-5 pt-0 rounded-bottom">
-        <Row className="g-4">
+        <Row className="g-4  ">
           {sections.map((section, index) => (
-            <Col key={index} lg={4} className="col-12">
-              <div className="media-wrap _1x1 mb-4">
+            <Col key={index} lg={4} className="col-12 d-flex flex-column justify-content-between ">
+     <div>
+     <div className="media-wrap _1x1 mb-4">
                 <img
                   src={section.img}
                   className="media-asset"
                   alt={section.title}
                 />
               </div>
-              <div>
+       
                 <h4 className="mb-1">{section.title}</h4>
                 <span>{section.description}</span>
-                <div>
+                <div >
                   {section.details.map((detail, i) => (
                     <span key={i} className="d-block my-1">
                       {detail.label && (
@@ -124,14 +125,15 @@ const GitInTouchModal = ({ modalShow, setModalShow }) => {
                     </span>
                   ))}
                 </div>
-                <p>{section.quote}</p>
+     </div>
+              
                 <Link
                   to={section.buttonLink}
-                  className="button no-outline w-button mt-3"
+                  className="button no-outline w-button"
                 >
                   {section.buttonText}
                 </Link>
-              </div>
+              
             </Col>
           ))}
         </Row>
