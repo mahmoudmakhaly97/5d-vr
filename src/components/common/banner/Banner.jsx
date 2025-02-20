@@ -5,13 +5,29 @@ import { Container } from "reactstrap";
 import ImageMaker from "./../image-maker/ImageMaker";
 const Banner = ({ tabs = [], className = "" }) => {
   const [selectedTab, setSelectedTab] = useState(0);
-
+  const [mainTitle , setMainTitle] = useState("AI Interact – The Future of Soft Skills Training ")
+const [videoSrc , setVideoSrc] = useState("https://www.youtube.com/watch?v=mfEiIiixwrk&ab_channel=5dVR")
+const handleTabClick = (tab) => {
+  setSelectedTab(tab.id) ; 
+ if(tab.id===0){
+  setMainTitle(mainTitle)
+  setVideoSrc(videoSrc)
+ }
+ else if(tab.id===1){
+  setMainTitle("Velux – AR Window Installation Guide  ")
+  setVideoSrc("https://www.youtube.com/shorts/4YOM07aqwTE")
+ }
+ else if(tab.id===2){
+  setMainTitle(" Feel the Patient – Immersive VR for Pharmaceutical Storytelling ")
+  setVideoSrc("https://www.youtube.com/shorts/kN1lLRMpUks")
+ }
+}
   return (
     <Container>
       <div className={`${className}`}>
         <div className="d-flex flex-column ">
           <h2 className="text-center mb-3">
-            Speed up your character animation workflow
+           {mainTitle}
           </h2>
 
           <div className="d-flex flex-column">
@@ -21,7 +37,7 @@ const Banner = ({ tabs = [], className = "" }) => {
                   <div className="media-asset d-flex">
                     <Video
                       poster="https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/646cd59500edc1681aba933c_capture-studio-thumbnail-min.webp"
-                      src="https://media.rokoko.com/Capture-Studio.mp4"
+                      src={videoSrc}
                       message="Your browser does not support the video tag.
 "
                     />
@@ -36,12 +52,12 @@ const Banner = ({ tabs = [], className = "" }) => {
           <div className="tabs-menu-2 no-scrollbar w-tab-menu pt-5">
             {tabs &&
               tabs.map((tab) => (
-                <a
+                <a  
                   key={tab.id}
                   className={`tab-link-2 w-inline-block w-tab-link ${
                     selectedTab == tab.id ? "text-white  border-bottom" : ""
                   }`}
-                  onClick={() => setSelectedTab(tab.id)}
+                  onClick={()=>handleTabClick(tab)}
                 >
                   <div>{tab.tabName}</div>
                 </a>

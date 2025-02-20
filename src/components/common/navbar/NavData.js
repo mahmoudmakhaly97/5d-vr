@@ -99,7 +99,7 @@ export const navData = [
       {
         subTitles: [
           {
-            route: "/dummy-page",
+            route: "/featured-projects",
             subTitle: "Featured Projects",
           },
           {

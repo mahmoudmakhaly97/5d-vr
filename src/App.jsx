@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   ClientTestimonials,
   CompanyValues,
+  FeaturedProjects,
   HomePage,
   MeetTheTeam,
   OurVision,
@@ -19,6 +20,8 @@ const App = () => {
         {/* home page route  */}
         <Route path="/" element={<HomePage />} />
         {/* about us routes */}
+        <Route path="featured-projects" element={    <FeaturedProjects /> } /> 
+    
         <Route path="dummy-page" element={<DummyPage />} />
         <Route path="our-vision" element={<OurVision />} />
         <Route path="company-values" element={<CompanyValues />} />
