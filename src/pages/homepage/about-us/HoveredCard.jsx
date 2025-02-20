@@ -1,25 +1,33 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ImageMaker } from "@components/common";
 
 const HoverCard = ({ images }) => {
-  const [currentImage, setCurrentImage] = useState(images[0]); 
-  const intervalRef = useRef(null); // Store interval ID persistently
+  const [currentImage, setCurrentImage] = useState(images[0]);
+  const intervalRef = useRef(null);
+
+  // تحميل الصور مسبقًا لتحسين الأداء مع الصور البعيدة
+  useEffect(() => {
+    images.forEach((url) => {
+      const img = new Image();
+      img.src = `${url}?t=${new Date().getTime()}`; // منع التخزين المؤقت
+    });
+  }, [images]);
 
   const startSlideshow = () => {
     let i = 0;
     intervalRef.current = setInterval(() => {
-      setCurrentImage(images[i]);
-      i = (i + 1) % images.length;  
-    }, 200);
+      setCurrentImage(`${images[i]}?t=${new Date().getTime()}`);
+      i = (i + 1) % images.length;
+    }, 250); // زيادة مدة العرض لتجنب التقطيع
   };
 
   const stopSlideshow = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
-      intervalRef.current = null; // Reset interval reference
+      intervalRef.current = null;
     }
-    setCurrentImage(images[0]);
+    setCurrentImage(images[0]); // العودة للصورة الأولى
   };
 
   return (
