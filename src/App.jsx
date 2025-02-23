@@ -15,6 +15,13 @@ import {
   _360PhotographyAndVideoGraphic,
   _3DModelingAndAnimation,
   TrainingAndCourses,
+  EducationAndTraining,
+  Healthcare,
+  Entertainment,
+  CulturalHeritage,
+  MarketingAndRetails,
+  RealEstate,
+  EventsAndExhibitions,
 } from "./pages";
 import { Navbar, Footer } from "@components";
 import DummyPage from "./pages/DummyPage";
@@ -48,6 +55,20 @@ const App = () => {
           element={<InteractiveInstallations />}
         />
         <Route path="training-and-courses" element={<TrainingAndCourses />} />
+        {/* Sectors & Industries Routes */}
+        <Route
+          path="education-and-training"
+          element={<EducationAndTraining />}
+        />
+        <Route path="health-care" element={<Healthcare />} />
+        <Route path="entertainment" element={<Entertainment />} />
+        <Route path="cultural-heritage" element={<CulturalHeritage />} />
+        <Route path="marketing-and-retail" element={<MarketingAndRetails />} />
+        <Route path="real-estate" element={<RealEstate />} />
+        <Route
+          path="events-and-exhibitions"
+          element={<EventsAndExhibitions />}
+        />
 
         {/*Profile routes */}
         <Route path="featured-projects" element={<FeaturedProjects />} />

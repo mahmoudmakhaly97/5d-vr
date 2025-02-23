@@ -61,31 +61,31 @@ export const navData = [
       {
         subTitles: [
           {
-            route: "/dummy-page",
+            route: "/education-and-training",
             subTitle: "Education & Training",
           },
           {
-            route: "Healthcare",
+            route: "health-care",
             subTitle: "Healthcare",
           },
           {
-            route: "/dummy-page",
+            route: "/entertainment",
             subTitle: "Entertainment",
           },
           {
-            route: "/dummy-page",
+            route: "/cultural-heritage",
             subTitle: "Cultural Heritage",
           },
           {
-            route: "/dummy-page",
+            route: "/marketing-and-retail",
             subTitle: "Marketing & Retail",
           },
           {
-            route: "/dummy-page",
+            route: "/real-estate",
             subTitle: "Real Estate",
           },
           {
-            route: "/dummy-page",
+            route: "/events-and-exhibitions",
             subTitle: "Events & Exhibitions",
           },
         ],
