@@ -11,10 +11,10 @@ const AboutUs = () => {
     },
     {
       imgSrc: img2,
-      route: "",
+      route: "/education-and-training",
     },
     {
-      route: "",
+      route: "/virtual-reality",
       imgSrc: img3,
     },
   ];
