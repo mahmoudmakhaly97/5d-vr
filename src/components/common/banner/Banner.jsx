@@ -3,32 +3,31 @@ import { Video } from "@components";
 import img2 from "@images/63c6b0ad72f4f4b412be97f0_screen-mockup.svg";
 import { Container } from "reactstrap";
 import ImageMaker from "./../image-maker/ImageMaker";
-const Banner = ({ tabs = [], className = "" }) => {
+const Banner = ({ tabs = [], className = "", titles = [], videosSrc = [] }) => {
   const [selectedTab, setSelectedTab] = useState(0);
-  const [mainTitle , setMainTitle] = useState("AI Interact – The Future of Soft Skills Training ")
-const [videoSrc , setVideoSrc] = useState("https://www.youtube.com/watch?v=mfEiIiixwrk&ab_channel=5dVR")
-const handleTabClick = (tab) => {
-  setSelectedTab(tab.id) ; 
- if(tab.id===0){
-  setMainTitle("AI Interact – The Future of Soft Skills Training ")
-  setVideoSrc("https://www.youtube.com/watch?v=mfEiIiixwrk&ab_channel=5dVR")
- }
- else if(tab.id===1){
-  setMainTitle("Velux – AR Window Installation Guide  ")
-  setVideoSrc("https://www.youtube.com/shorts/4YOM07aqwTE")
- }
- else if(tab.id===2){
-  setMainTitle(" Feel the Patient – Immersive VR for Pharmaceutical Storytelling ")
-  setVideoSrc("https://www.youtube.com/shorts/kN1lLRMpUks")
- }
-}
+  // if you want to change title every changes on tabs
+  const [mainTitle, setMainTitle] = useState(titles[0]);
+  // if you want to change video every changes on tabs
+
+  const [videoSrc, setVideoSrc] = useState(videosSrc[0]);
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab.id);
+    if (tab.id === 0) {
+      setMainTitle(titles[0]);
+      setVideoSrc(videosSrc[0]);
+    } else if (tab.id === 1) {
+      setMainTitle(titles[1]);
+      setVideoSrc(videosSrc[1]);
+    } else if (tab.id === 2) {
+      setMainTitle(titles[2]);
+      setVideoSrc(videosSrc[2]);
+    }
+  };
   return (
     <Container>
       <div className={`${className}`}>
         <div className="d-flex flex-column ">
-          <h2 className="text-center mb-3">
-           {mainTitle}
-          </h2>
+          <h2 className="text-center mb-3">{mainTitle}</h2>
 
           <div className="d-flex flex-column">
             <div className="position-relative">
@@ -36,7 +35,6 @@ const handleTabClick = (tab) => {
                 <div className="media-wrap _16x9 border-radius-0">
                   <div className="media-asset d-flex">
                     <Video
-                      poster="https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/646cd59500edc1681aba933c_capture-studio-thumbnail-min.webp"
                       src={videoSrc}
                       message="Your browser does not support the video tag.
 "
@@ -52,12 +50,12 @@ const handleTabClick = (tab) => {
           <div className="tabs-menu-2 no-scrollbar w-tab-menu pt-5">
             {tabs &&
               tabs.map((tab) => (
-                <a  
+                <a
                   key={tab.id}
                   className={`tab-link-2 w-inline-block w-tab-link ${
                     selectedTab == tab.id ? "text-white  border-bottom" : ""
                   }`}
-                  onClick={()=>handleTabClick(tab)}
+                  onClick={() => handleTabClick(tab)}
                 >
                   <div>{tab.tabName}</div>
                 </a>

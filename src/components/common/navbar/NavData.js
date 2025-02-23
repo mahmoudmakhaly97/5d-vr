@@ -11,31 +11,35 @@ export const navData = [
       {
         subTitles: [
           {
-            route: "/dummy-page",
+            route: "/virtual-reality",
             subTitle: "Virtual Reality ",
           },
           {
-            route: "Healthcare",
+            route: "/augmented-reality",
             subTitle: "Augmented Reality",
           },
           {
-            route: "/dummy-page",
+            route: "/mixed-reality",
             subTitle: "Mixed Reality ",
           },
           {
-            route: "/dummy-page",
-            subTitle: "360 Photography & Videography ",
+            route: "/ai-powered-xr-solutions",
+            subTitle: "AI-Powered XR Solutions",
           },
           {
-            route: "/dummy-page",
+            route: "/360-photography-and-Video-graphic",
+            subTitle: "360 Photography & Video graphic ",
+          },
+          {
+            route: "/3d-modeling-and-animation",
             subTitle: "3D Modeling & Animation ",
           },
           {
-            route: "/dummy-page",
+            route: "/interactive-installations",
             subTitle: "Interactive Installations ",
           },
           {
-            route: "/dummy-page",
+            route: "/training-and-courses",
             subTitle: "Training & Courses ",
           },
         ],

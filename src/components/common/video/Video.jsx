@@ -1,5 +1,5 @@
 const Video = ({ poster, src, message = "", className, rest, style }) => {
-  const isYoutube = src.includes("youtube.com") || src.includes("youtube.be");
+  const isYoutube = src?.includes("youtube.com") || src?.includes("youtube.be");
 
   if (isYoutube) {
     const url = new URL(src);
