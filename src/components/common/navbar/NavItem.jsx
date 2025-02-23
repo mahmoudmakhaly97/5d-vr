@@ -17,7 +17,11 @@ const NavItem = ({ item }) => {
               <div className="width-6-col display-flex direction-vertical t_display-none">
                 <div className="media-wrap _606x260 margin-bottom margin-large w-inline-block">
                   <div className="media-asset display-flex justify-center w-embed">
-                    <Video src={item?.videoSrc} poster={item?.videoPoster} />
+                    <Video
+                      src={item?.videoSrc}
+                      poster={item?.videoPoster}
+                      className="rounded-3   bg-black"
+                    />
                   </div>
                 </div>
                 <h6 className="video-desc">{item?.videoDesc}</h6>

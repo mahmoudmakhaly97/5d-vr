@@ -1,10 +1,11 @@
+import contactUsVideo from "../../../assets/videos/contact us.mp4";
+import servicesVideo from "../../../assets/videos/services.mp4";
 export const navData = [
   {
     id: 2,
     dropdownLink: "Services",
-    videoPoster:
-      "https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/674485e48f587c8fac8ac2d1_Indie_Navbar_Promo_1212x520-min.avif",
-    videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
+    videoPoster: "",
+    videoSrc: servicesVideo,
     videoDesc: "‘Stepping into the next dimension’ ",
     features: [
       {
@@ -49,9 +50,8 @@ export const navData = [
   {
     id: 3,
     dropdownLink: "Sectors & Industries",
-    videoPoster:
-      "https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/674485e48f587c8fac8ac2d1_Indie_Navbar_Promo_1212x520-min.avif",
-    videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
+    videoPoster: " ",
+    videoSrc: servicesVideo,
     videoDesc: "‘Turning vision into impact, across every domain’",
     features: [
       {
@@ -91,9 +91,8 @@ export const navData = [
   {
     id: 4,
     dropdownLink: "Portfolio",
-    videoPoster:
-      "https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/674485e48f587c8fac8ac2d1_Indie_Navbar_Promo_1212x520-min.avif",
-    videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
+    videoPoster: " ",
+    videoSrc: servicesVideo,
     videoDesc: "‘Create. Innovate. Immerse.’",
     features: [
       {
@@ -117,9 +116,8 @@ export const navData = [
   {
     id: 1,
     dropdownLink: "About Us",
-    videoPoster:
-      "https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/674485e48f587c8fac8ac2d1_Indie_Navbar_Promo_1212x520-min.avif",
-    videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
+    videoPoster: "",
+    videoSrc: servicesVideo,
     videoDesc: "‘Where imagination meets innovation’",
 
     features: [
@@ -150,9 +148,8 @@ export const navData = [
   {
     id: 5,
     dropdownLink: "Contact",
-    videoPoster:
-      "https://cdn.prod.website-files.com/5e6b63ac3b6e253f11889f39/674485e48f587c8fac8ac2d1_Indie_Navbar_Promo_1212x520-min.avif",
-    videoSrc: "https://media.rokoko.com/Indie_Navbar_Promo_1212x520px.mp4",
+    videoPoster: "",
+    videoSrc: contactUsVideo,
     videoDesc: "  ",
     features: [
       {
