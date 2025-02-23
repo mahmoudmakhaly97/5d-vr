@@ -14,3 +14,4 @@ export { _3DModelingAndAnimation } from "./services";
 export { InteractiveInstallations } from "./services";
 export { TrainingAndCourses } from "./services";
 export * from "./sector-industries";
+export * from "./portfolio";

@@ -106,12 +106,8 @@ export const navData = [
             subTitle: "Featured Projects",
           },
           {
-            route: "/dummy-page",
+            route: "/case-studies",
             subTitle: "Case Studies",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "",
           },
         ],
       },

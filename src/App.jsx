@@ -22,6 +22,7 @@ import {
   MarketingAndRetails,
   RealEstate,
   EventsAndExhibitions,
+  CaseStudies,
 } from "./pages";
 import { Navbar, Footer } from "@components";
 import DummyPage from "./pages/DummyPage";
@@ -72,6 +73,7 @@ const App = () => {
 
         {/*Profile routes */}
         <Route path="featured-projects" element={<FeaturedProjects />} />
+        <Route path="case-studies" element={<CaseStudies />} />
         {/* about us routes */}
         <Route path="dummy-page" element={<DummyPage />} />
         <Route path="our-vision" element={<OurVision />} />

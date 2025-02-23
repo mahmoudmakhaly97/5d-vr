@@ -12,16 +12,8 @@ const Banner = ({ tabs = [], className = "", titles = [], videosSrc = [] }) => {
   const [videoSrc, setVideoSrc] = useState(videosSrc[0]);
   const handleTabClick = (tab) => {
     setSelectedTab(tab.id);
-    if (tab.id === 0) {
-      setMainTitle(titles[0]);
-      setVideoSrc(videosSrc[0]);
-    } else if (tab.id === 1) {
-      setMainTitle(titles[1]);
-      setVideoSrc(videosSrc[1]);
-    } else if (tab.id === 2) {
-      setMainTitle(titles[2]);
-      setVideoSrc(videosSrc[2]);
-    }
+    setMainTitle(titles[tab.id]);
+    setVideoSrc(videosSrc[tab.id]);
   };
   return (
     <Container>
@@ -47,7 +39,7 @@ const Banner = ({ tabs = [], className = "", titles = [], videosSrc = [] }) => {
           </div>
         </div>
         <div>
-          <div className="tabs-menu-2 no-scrollbar w-tab-menu pt-5">
+          <div className="d-flex justify-content-center gap-5 w-tab-menu pt-5 overflow-auto">
             {tabs &&
               tabs.map((tab) => (
                 <a

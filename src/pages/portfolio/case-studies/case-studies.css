@@ -1,0 +1,31 @@
+.case-studies .w-tab-menu {
+  display: flex;
+  justify-content: flex-start !important;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: wrap; /* Keeps tabs in one line */
+  width: 80%;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+@media (max-width: 768px) {
+  .case-studies .w-tab-menu {
+    width: 100%;
+  }
+}
+.case-studies .w-tab-menu::-webkit-scrollbar {
+  height: 10px;
+}
+
+/* Track (the background) */
+.case-studies .w-tab-menu::-webkit-scrollbar-track {
+  background: #f1f1f162;
+  border-radius: 4px;
+  width: 2px !important;
+}
+
+/* Handle (the moving part) */
+.case-studies .w-tab-menu::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+  width: 2px !important;
+}
