@@ -1,9 +1,7 @@
 import { Banner } from "@components";
 import KeyApplications from "./../../services/key-applications/KeyApplications";
 
-
 const OurStrengths = () => {
-  
   return (
     <div className="pt-5">
       <div className="pt-5">
@@ -11,8 +9,7 @@ const OurStrengths = () => {
           className="py-5"
           titles={["Our Strengths"]}
           videosSrc={[
-            "https://www.youtube.com/watch?v=YWYM7iYGjoE&ab_channel=5dVR",
-            "https://www.youtube.com/watch?v=YWYM7iYGjoE&ab_channel=5dVR",
+            "https://www.youtube.com/watch?v=Sfe4qMcveL8&ab_channel=5dVR",
           ]}
           tabs={[
             {
@@ -25,7 +22,7 @@ const OurStrengths = () => {
                       value:
                         "<strong>Technology-Agnostic Expertise: </strong>We develop solutions that integrate seamlessly with various hardware and software platforms, ensuring maximum flexibility and scalability for our clients. We are not tied to any single technology, allowing us to choose the best tools for each project.",
                     },
-                   
+
                     {
                       key: "",
                       value:

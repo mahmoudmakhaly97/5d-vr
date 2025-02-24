@@ -7,7 +7,7 @@ const WhyChoose5dVr = () => {
           className="py-5"
           titles={["Why Choose 5dVR? "]}
           videosSrc={[
-            "https://www.youtube.com/watch?v=jAvWptBjM7M&ab_channel=5dVR",
+            "https://www.youtube.com/watch?v=Sfe4qMcveL8&ab_channel=5dVR",
           ]}
           tabs={[
             {

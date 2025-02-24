@@ -7,8 +7,7 @@ const OurVision = () => {
           className="py-5"
           titles={[" Our Vision"]}
           videosSrc={[
-            "https://www.youtube.com/watch?v=YWYM7iYGjoE&ab_channel=5dVR",
-            "https://www.youtube.com/watch?v=YWYM7iYGjoE&ab_channel=5dVR",
+            "https://www.youtube.com/watch?v=Sfe4qMcveL8&ab_channel=5dVR",
           ]}
           tabs={[
             {
