@@ -62,9 +62,7 @@ const Media = () => {
         <Col lg={6}>
           <h2>Stay Connected with 5dVR</h2>
         </Col>
-        <Col lg={6} className="d-flex justify-content-lg-end">
-          <Button variant="outline"> Go to Blog </Button>
-        </Col>
+      
       </Row>
       {/* <Row className="py-3">
         <div className="media-wrap _1464x530 t_786x318 m_327x198 w-inline-block ">
