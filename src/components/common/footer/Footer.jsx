@@ -57,7 +57,7 @@ const Footer = () => {
                     <span>facebook</span>
                   </Link>
                 </li>
-               
+
                 <li className="mb-3">
                   <Link
                     to="https://www.linkedin.com/company/5dvr/"
@@ -78,41 +78,30 @@ const Footer = () => {
                     <span>youtube</span>
                   </Link>
                 </li>
-             
               </ul>
             </Col>
 
             <Col xl={4}>
               <div className="pb-0 pb-xl-4"></div>
               <ul className="py-0 py-lg-5">
-                <li className="mb-3">
+                {/* <li className="mb-3">
                   <Link to="/" className="text-decoration-none">
                     Home
                   </Link>
-                </li>
+                </li> */}
                 <li className="mb-3">
-                  <Link to="" className="text-decoration-none">
-                    About Us
+                  <Link to="our-vision" className="text-decoration-none">
+                    Our Vision
                   </Link>
                 </li>
                 <li className="mb-3">
-                  <Link to="" className="text-decoration-none">
-                    Services
+                  <Link to="our-strengths" className="text-decoration-none">
+                    Our Strengths
                   </Link>
                 </li>
                 <li className="mb-3">
-                  <Link to="/" className="text-decoration-none">
-                    Clients & Partners
-                  </Link>
-                </li>
-                <li className="mb-3">
-                  <Link to="/" className="text-decoration-none">
-                    Latest News
-                  </Link>
-                </li>
-                <li className="mb-3">
-                  <Link to="/" className="text-decoration-none">
-                    Contact Us
+                  <Link to="why-choose-5dvr" className="text-decoration-none">
+                    Why Choose 5dVR?
                   </Link>
                 </li>
               </ul>

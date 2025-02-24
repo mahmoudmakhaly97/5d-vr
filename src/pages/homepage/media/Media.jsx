@@ -4,12 +4,12 @@ import { Button, Video } from "@components/common";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import media2 from "@images/media2.webp";
-import media1 from "@images/media1.webp";
+ import media1 from "@images/media1.webp";
 import xceedVideo from "../../../assets/videos/xceed.mp4";
 import xceedImg from "../../../assets/images/xceedImg.jpg";
 import leap from "../../../assets/images/leap.png";
 import Qatar from "../../../assets/images/Qatar.jpg";
+import riseUp from "../../../assets/images/rise-up.jpg";
 const mediaData = [
   {
     imgUrl: media1,
@@ -33,7 +33,7 @@ const mediaData = [
     text: " As part of the Web Summit in Qatar, 5dVR is proud to present how  immersive technologies are reshaping industries. Experience firsthand how we combine creativity and technology to deliver  groundbreaking solutions.",
   },
   {
-    imgUrl: media2,
+    imgUrl: riseUp,
     title: " Technology Partner for RiseUp AI: Shaping the Future ",
     text: "We’re honored to be the official technology partner for RiseUp AI.  From AI-driven immersive training to interactive simulations, 5dVR is powering the future of artificial intelligence in immersive applications.",
   },
