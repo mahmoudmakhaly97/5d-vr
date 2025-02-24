@@ -33,7 +33,11 @@ const Footer = () => {
                   <i className="fa-solid fa-arrow-right"></i>
                 </Button>
               </div>
-              <Link to="" className="mb-3 d-block">
+              <Link
+                target="_blank"
+                to="https://youtube.com/@5dvr952?si=ejxJjnsOS_ktgCxY"
+                className="mb-3 d-block "
+              >
                 <ImageMaker src={youtube} alt="Youtube" />
               </Link>
               <ul>
