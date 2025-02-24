@@ -4,10 +4,8 @@ import { Button, ImageMaker } from "@components";
 import youtube from "@images/footer/youtube.jpg";
 import instagram from "@images/footer/instagram.svg";
 import facebook from "@images/footer/facebook.svg";
-import twitter from "@images/footer/twitter.svg";
 import linkedin from "@images/footer/linkedin.svg";
-import tiktok from "@images/footer/tiktok.svg";
-import discord from "@images/footer/discord.svg";
+
 import logo from "@images/navbar/logo.svg";
 import { Col, Container, Input, Row } from "reactstrap";
 
@@ -41,7 +39,8 @@ const Footer = () => {
               <ul>
                 <li className="mb-3">
                   <Link
-                    to=""
+                    target="_blank"
+                    to="https://www.instagram.com/5dvrfuturereality?igsh=N3NlbGg2Z2Jwb2lh"
                     className="d-flex align-items-center gap-4 text-decoration-none"
                   >
                     <ImageMaker src={instagram} alt="instagram" />
@@ -50,25 +49,19 @@ const Footer = () => {
                 </li>
                 <li className="mb-3">
                   <Link
-                    to=""
+                    target="_blank"
+                    to="https://www.facebook.com/share/18dY7SABNw/?mibextid=wwXIfr"
                     className="d-flex align-items-center gap-4 text-decoration-none"
                   >
                     <ImageMaker src={facebook} alt="facebook" />
                     <span>facebook</span>
                   </Link>
                 </li>
+               
                 <li className="mb-3">
                   <Link
-                    to=""
-                    className="d-flex align-items-center gap-4 text-decoration-none"
-                  >
-                    <ImageMaker src={twitter} alt="twitter" />
-                    <span>twitter</span>
-                  </Link>
-                </li>
-                <li className="mb-3">
-                  <Link
-                    to=""
+                    to="https://www.linkedin.com/company/5dvr/"
+                    target="_blank"
                     className="d-flex align-items-center gap-4 text-decoration-none"
                   >
                     <ImageMaker src={linkedin} alt="linkedin" />
@@ -77,22 +70,15 @@ const Footer = () => {
                 </li>
                 <li className="mb-3">
                   <Link
-                    to=""
+                    target="_blank"
+                    to="https://youtube.com/@5dvr952?si=ejxJjnsOS_ktgCxY"
                     className="d-flex align-items-center gap-4 text-decoration-none"
                   >
-                    <ImageMaker src={tiktok} alt="tiktok" />
-                    <span>tiktok</span>
+                    <i className="fa-brands fa-youtube fa-lg"></i>
+                    <span>youtube</span>
                   </Link>
                 </li>
-                <li className="mb-3">
-                  <Link
-                    to=""
-                    className="d-flex align-items-center gap-4 text-decoration-none"
-                  >
-                    <ImageMaker src={discord} alt="discord" />
-                    <span>discord</span>
-                  </Link>
-                </li>
+             
               </ul>
             </Col>
 

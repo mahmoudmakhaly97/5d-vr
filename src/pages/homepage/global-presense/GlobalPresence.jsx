@@ -8,8 +8,8 @@ const GlobalPresence = () => {
     <Container className="pt-lg-5 pt-3">
       <Row className="g-4 g-lg-0 pt-lg-5  pt-3 align-items-center">
         <Col lg={6}>
-          <div className=" ">
-            <ImageMaker src={img} style={{ maxWidth: "75%" }} />
+          <div className="d-flex justify-content-start">
+            <ImageMaker src={img} style={{ maxWidth: "70%" }} />
           </div>
         </Col>
 

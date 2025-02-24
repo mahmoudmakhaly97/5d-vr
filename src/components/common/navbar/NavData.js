@@ -117,7 +117,7 @@ export const navData = [
     id: 1,
     dropdownLink: "About Us",
     videoPoster: "",
-    videoSrc: servicesVideo,
+    videoSrc: contactUsVideo,
     videoDesc: "‘Where imagination meets innovation’",
 
     features: [
@@ -132,43 +132,12 @@ export const navData = [
             route: "why-choose-5dvr",
             subTitle: "Why Choose 5dVR? ",
           },
-          {
-            route: "meet-the-team",
-            subTitle: "Meet the Team",
-          },
-          {
-            route: "client-testimonials",
-            subTitle: "Client Testimonials",
-          },
+       
+         
         ],
       },
     ],
   },
 
-  {
-    id: 5,
-    dropdownLink: "Contact",
-    videoPoster: "",
-    videoSrc: contactUsVideo,
-    videoDesc: "  ",
-    features: [
-      {
-        subTitles: [
-          {
-            route: "/dummy-page",
-            subTitle: "Contact Form",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "Office Location",
-          },
-          {
-            route: "/dummy-page",
-            subTitle: "Career Opportunities",
-          },
-        ],
-      },
-    ],
-  },
+ 
 ];
-``;

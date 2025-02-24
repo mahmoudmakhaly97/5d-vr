@@ -6,25 +6,29 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import media2 from "@images/media2.webp";
 import media1 from "@images/media1.webp";
+import xceedVideo from "../../../assets/videos/xceed.mp4";
+import xceedImg from "../../../assets/images/xceedImg.jpg";
+import leap from "../../../assets/images/leap.png";
+import Qatar from "../../../assets/images/Qatar.jpg";
 const mediaData = [
   {
     imgUrl: media1,
     title: "5dVR Partners with TACIES for Immersive Science Education in Oman",
     text: "  We’re thrilled to collaborate with TACIES to bring cutting-edge AR  and VR experiences across Oman, enhancing how science is taught and experienced.",
-    videoUrl:"https://www.youtube.com/embed/oibDG016-mI"
+    videoUrl: xceedVideo,
   },
   {
-    imgUrl: media2,
+    imgUrl: xceedImg,
     title: "Xceed Immersive and 5dVR Team Up for Large-Scale Projects in Dubai",
     text: " Together with Xceed Immersive, we’re redefining immersive   experiences in the UAE, focusing on real estate, corporate training, and entertainment.",
   },
   {
-    imgUrl: media1,
+    imgUrl: leap,
     title: " 5dVR at LEAP 2025: Showcasing Immersive Innovation",
     text: "   We’re excited to announce our participation in LEAP 2025, the world’s largest technology event. Join us as we unveil our latest advancements in VR, AR, and AI integration for transformative   experiences.",
   },
   {
-    imgUrl: media2,
+    imgUrl: Qatar,
     title: " Web Summit Qatar: 5dVR Takes Center Stage",
     text: " As part of the Web Summit in Qatar, 5dVR is proud to present how  immersive technologies are reshaping industries. Experience firsthand how we combine creativity and technology to deliver  groundbreaking solutions.",
   },
@@ -88,14 +92,12 @@ const Media = () => {
               href="#"
               className="media-wrap _720x370 t_381x231 w-inline-block"
             >
-              {
-                item.videoUrl?          <Video
-                className="media-asset w-video"
-                src={item.videoUrl}
-              />: <img src={item.imgUrl} className="media-asset" /> 
-              }
+              {item.videoUrl ? (
+                <Video className="media-asset w-video" src={item.videoUrl} />
+              ) : (
+                <img src={item.imgUrl} className="media-asset" />
+              )}
               {/* <img src={item.imgUrl} className="media-asset" /> */}
-              
             </a>
             <div className="display-flex justify-space-between gap-small t_direction-vertical  gap-2 my-3">
               <span className="text-gray  flex-grow-1">{item.title}</span>
