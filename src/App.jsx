@@ -2,12 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import {
   AIPoweredXRSolutions,
   AugmentedReality,
-  ClientTestimonials,
-  CompanyValues,
+  OurStrengths,
   FeaturedProjects,
   HomePage,
   InteractiveInstallations,
-  MeetTheTeam,
   MixedReality,
   OurVision,
   VirtualReality,
@@ -77,10 +75,8 @@ const App = () => {
         {/* about us routes */}
         <Route path="dummy-page" element={<DummyPage />} />
         <Route path="our-vision" element={<OurVision />} />
-        <Route path="company-values" element={<CompanyValues />} />
+        <Route path="our-strengths" element={<OurStrengths />} />
         <Route path="why-choose-5dvr" element={<WhyChoose5dVr />} />
-        <Route path="meet-the-team" element={<MeetTheTeam />} />
-        <Route path="client-testimonials" element={<ClientTestimonials />} />
       </Routes>
       <Footer />
     </BrowserRouter>

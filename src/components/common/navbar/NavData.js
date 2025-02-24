@@ -125,19 +125,15 @@ export const navData = [
         subTitles: [
           { route: "our-vision", subTitle: "Our Vision" },
           {
-            route: "company-values",
-            subTitle: "Company Values",
+            route: "our-strengths",
+            subTitle: "Our Strengths",
           },
           {
             route: "why-choose-5dvr",
             subTitle: "Why Choose 5dVR? ",
           },
-       
-         
         ],
       },
     ],
   },
-
- 
 ];

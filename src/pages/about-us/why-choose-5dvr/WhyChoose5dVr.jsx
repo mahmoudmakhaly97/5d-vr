@@ -13,7 +13,7 @@ const WhyChoose5dVr = () => {
             {
               tabName: "Description",
               tabContent:
-                " We combine deep expertise in XR technologies with cutting-edge AI research and development. Our 5dAI team comprises experts in machine learning, natural language processing, computer vision, and avatar design.",
+                "5dVR creates cutting-edge immersive solutions using Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR). Our 5dAI initiative leverages advanced artificial intelligence to create lifelike, multilingual, and emotionally intelligent avatars. We partner with industry leaders to deliver high-quality, scalable experiences that transform how businesses operate and connect with their audiences. Explore the future of interaction.",
               id: 0,
             },
           ]}
