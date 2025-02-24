@@ -14,7 +14,7 @@ const AboutUs = () => {
       route: "/education-and-training",
     },
     {
-      route: "/virtual-reality",
+      route: "/ai-powered-xr-solutions",
       imgSrc: img3,
     },
   ];

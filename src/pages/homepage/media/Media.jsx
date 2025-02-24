@@ -1,10 +1,10 @@
 import { Col, Container, Row } from "reactstrap";
-import { Button, Video } from "@components/common";
+import { Video } from "@components/common";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
- import media1 from "@images/media1.webp";
+import media1 from "@images/media1.webp";
 import xceedVideo from "../../../assets/videos/xceed.mp4";
 import xceedImg from "../../../assets/images/xceedImg.jpg";
 import leap from "../../../assets/images/leap.png";
@@ -36,6 +36,7 @@ const mediaData = [
     imgUrl: riseUp,
     title: " Technology Partner for RiseUp AI: Shaping the Future ",
     text: "We’re honored to be the official technology partner for RiseUp AI.  From AI-driven immersive training to interactive simulations, 5dVR is powering the future of artificial intelligence in immersive applications.",
+    imgClassName: "riseUp",
   },
 ];
 const Media = () => {
@@ -62,7 +63,6 @@ const Media = () => {
         <Col lg={6}>
           <h2>Stay Connected with 5dVR</h2>
         </Col>
-      
       </Row>
       {/* <Row className="py-3">
         <div className="media-wrap _1464x530 t_786x318 m_327x198 w-inline-block ">
@@ -83,7 +83,7 @@ const Media = () => {
       <Slider {...settings} className="my-3 my-lg-5">
         {mediaData.map((item, index) => (
           <div
-            className="display-flex direction-vertical gap-small t_gap-x-small"
+            className="display-flex direction-vertical gap-small t_gap-x-small pointer-events-none"
             key={index}
           >
             <a
@@ -93,7 +93,15 @@ const Media = () => {
               {item.videoUrl ? (
                 <Video className="media-asset w-video" src={item.videoUrl} />
               ) : (
-                <img src={item.imgUrl} className="media-asset" />
+                <img
+                  src={item.imgUrl}
+                  className="media-asset"
+                  style={
+                    item?.imgClassName === "riseUp"
+                      ? { height: "177%" }
+                      : { height: "100%" }
+                  }
+                />
               )}
               {/* <img src={item.imgUrl} className="media-asset" /> */}
             </a>

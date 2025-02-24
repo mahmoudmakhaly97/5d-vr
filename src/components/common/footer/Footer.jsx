@@ -140,13 +140,7 @@ const Footer = () => {
       <div className="copyright py-4">
         <div className="container d-flex align-items-center gap-4">
           <Link to="" className="text-decoration-none  font-weight-500">
-            @5dvr
-          </Link>
-          <Link to="" className="text-decoration-none  font-weight-500">
-            Terms of use
-          </Link>
-          <Link to="" className="text-decoration-none  font-weight-500">
-            Privacy policy
+            @5dVR
           </Link>
         </div>
       </div>
